@@ -1,0 +1,82 @@
+#
+#  USUvalve - YAML configuration file
+#  usuvalvae.yml | Version: 11.02.2022 | Tobias Heer <tobias.heer@acp.de>
+#
+#  Copyright (C) 2021, ACP IT Solutions GmbH
+#  All Rights Reserved.
+#
+#  NOTICE:  All information contained herein is, and remains
+#  the property of ACP IT Solutions GmbH. Unauthorized copying of this software
+#  or parts is also strictly prohibited proprietary and confidential.
+#  Dissemination of this information or reproduction of this material is strictly
+#  forbidden unless prior written permission is obtained from ACP IT solutions GmbH.
+#
+
+clearpass:
+    hostname: bitna5011mvcs2
+    authz_bearer: Bearer 7521dd**********************933c23c2
+    user_mapping:
+      - user: 'ADB'
+        password: 'YD1**************GLK'
+        customer: 'ADB'
+      - user: 'BGBW'
+        password: 'q4e**************gIv'
+        customer: 'BGBW'
+      - user: 'RPS'
+        password: 'NBU**************y8b'
+        customer: 'RPS'
+      - user: 'RPK'
+        password: 'P3Z7*************LII'
+        customer: 'RPK'
+      - user: 'MLR'
+        password: 'kizS*************QCJ'
+        customer: 'LGL'
+      - user: 'LGL'
+        password: 'WI2b*************obx'
+        customer: 'LGL'
+      - user: 'AFLBCH'
+        password: 'kvI**************eGy'
+        customer: 'LGL'
+      - user: 'AFLELL'
+        password: 'xZt**************gWq'
+        customer: 'LGL'
+      - user: 'AFLKA'
+        password: 'Ywc**************X80'
+        customer: 'LGL'
+      - user: 'JUM'
+        password: 'ybQ**************hr1'
+        customer: 'JUM'
+      - user: 'JV'
+        password: 'Np7**************gG1'
+        customer: 'JUM'
+      - user: 'GESTA'
+        password: 'QaT**************2wn'
+        customer: 'JUM'
+    insight_adopt:
+      key: 'USU-SYSTEM-NAME'
+      query: 'Lager JUM'
+      target: 'INSIGHT-ADOPT-ENABLE'
+      value: True
+ise:
+    hostname: 127.0.0.1
+transaction:
+    path: '/opt/usuvalve/transaction'
+usu:
+    field_is_mac: 'macadresse'
+    field_mapping:
+      'komponentennr': 'USU-COMPONENT-CODE'
+      'komponententyp': 'USU-SYSTEM-TYPE'
+      'systemnr': 'USU-SYSTEM-CODE'
+      'computername': 'USU-COMPUTER-NAME'
+      'systemname': 'USU-SYSTEM-NAME'
+      'kunde': 'USU-CUSTOMER'
+      'komponentenklasse': 'USU-SYSTEM-CLASS'
+      'seriennr': 'USU-SYSTEM-SERIAL'
+      'geaendert': 'USU-LAST-CHANGE'
+      'orgeinheit_nr': 'USU-ORG-CODE'
+      'orgeinheit_beschreibung': 'USU-ORG-DESCRIPTION'
+      'admingruppe': 'USU-ADMIN-GROUP'
+      'adresse': 'USU-LOCATION-SITE'
+      'raum': 'USU-LOCATION-ROOM'
+    cppm_default_values:
+      Status: 'Known'

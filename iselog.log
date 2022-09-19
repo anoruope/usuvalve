@@ -1,0 +1,1158 @@
+2022-09-05 11:04:15,927 : INFO : 
+Parameters:
+2022-09-05 11:04:15,941 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:04:16,203 : DEBUG : https://212.77.180.253:9060 "GET /ers/config/endpoint HTTP/1.1" 200 None
+2022-09-05 11:04:16,207 : INFO : Endpoint found. Array with Mac and Id returned
+2022-09-05 11:04:16,208 : INFO : Reading actual data
+2022-09-05 11:04:16,209 : INFO : This programm took 0.28191304206848145 seconds to execute
+2022-09-05 11:04:59,216 : INFO : 
+Parameters:
+2022-09-05 11:04:59,233 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:04:59,471 : DEBUG : https://212.77.180.253:9060 "GET /ers/config/endpoint HTTP/1.1" 200 None
+2022-09-05 11:04:59,485 : INFO : No Endpoint found. Returned empty array
+2022-09-05 11:04:59,486 : INFO : Reading actual data
+2022-09-05 11:04:59,488 : INFO : This programm took 0.27100086212158203 seconds to execute
+2022-09-05 11:05:16,399 : INFO : 
+Parameters:
+2022-09-05 11:05:16,438 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:05:16,617 : DEBUG : https://212.77.180.253:9060 "GET /ers/config/endpoint HTTP/1.1" 200 None
+2022-09-05 11:05:16,623 : INFO : No Endpoint found. Returned empty array
+2022-09-05 11:05:16,623 : INFO : Reading actual data
+2022-09-05 11:07:23,946 : INFO : 
+Parameters:
+2022-09-05 11:07:23,955 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:07:24,145 : DEBUG : https://212.77.180.253:9060 "GET /ers/config/endpoint HTTP/1.1" 200 None
+2022-09-05 11:07:24,149 : INFO : No Endpoint found. Returned empty array
+2022-09-05 11:07:24,150 : INFO : Reading actual data
+2022-09-05 11:09:18,685 : INFO : 
+Parameters:
+2022-09-05 11:09:18,710 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:09:18,949 : DEBUG : https://212.77.180.253:9060 "GET /ers/config/endpoint HTTP/1.1" 200 None
+2022-09-05 11:09:18,954 : INFO : No Endpoint found. Returned empty array
+2022-09-05 11:09:18,954 : INFO : Reading actual data
+2022-09-05 11:10:11,082 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:10:11,382 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 201 0
+2022-09-05 11:10:11,384 : DEBUG : Status code: 201 for 78:8C:77:32:30:E3
+2022-09-05 11:10:11,389 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:10:11,652 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 201 0
+2022-09-05 11:10:11,655 : DEBUG : Status code: 201 for 78:8C:77:32:12:C8
+2022-09-05 11:10:11,658 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:10:11,934 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 201 0
+2022-09-05 11:10:11,939 : DEBUG : Status code: 201 for 78:8C:77:32:E2:B2
+2022-09-05 11:10:11,943 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:10:12,175 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 500 None
+2022-09-05 11:10:12,178 : ERROR : Status code: 500 and Response_text: {
+  "ERSResponse" : {
+    "operation" : "POST-create-endpoint",
+    "messages" : [ {
+      "title" : "Unable to create the endpoint. Endpoint \"78:8C:77:32:12:C8\" already exists.",
+      "type" : "ERROR",
+      "code" : "CRUD operation exception"
+    } ],
+    "link" : {
+      "rel" : "related",
+      "href" : "https://212.77.180.253:9060/ers/config/endpoint",
+      "type" : "application/xml"
+    }
+  }
+} for 78:8C:77:32:12:C8
+2022-09-05 11:10:12,186 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:10:12,462 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 201 0
+2022-09-05 11:10:12,468 : DEBUG : Status code: 201 for A4:BB:6D:92:2F:60
+2022-09-05 11:10:12,474 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:10:12,758 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 201 0
+2022-09-05 11:10:12,761 : DEBUG : Status code: 201 for 78:8C:77:32:32:93
+2022-09-05 11:10:12,766 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:10:13,033 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 201 0
+2022-09-05 11:10:13,035 : DEBUG : Status code: 201 for 78:8C:77:32:F2:94
+2022-09-05 11:10:13,038 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:10:13,263 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 500 None
+2022-09-05 11:10:13,265 : ERROR : Status code: 500 and Response_text: {
+  "ERSResponse" : {
+    "operation" : "POST-create-endpoint",
+    "messages" : [ {
+      "title" : "Unable to create the endpoint. Endpoint \"78:8C:77:32:32:93\" already exists.",
+      "type" : "ERROR",
+      "code" : "CRUD operation exception"
+    } ],
+    "link" : {
+      "rel" : "related",
+      "href" : "https://212.77.180.253:9060/ers/config/endpoint",
+      "type" : "application/xml"
+    }
+  }
+} for 78:8C:77:32:32:93
+2022-09-05 11:10:13,271 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:10:13,495 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 500 None
+2022-09-05 11:10:13,498 : ERROR : Status code: 500 and Response_text: {
+  "ERSResponse" : {
+    "operation" : "POST-create-endpoint",
+    "messages" : [ {
+      "title" : "Unable to create the endpoint. Endpoint \"78:8C:77:32:E2:B2\" already exists.",
+      "type" : "ERROR",
+      "code" : "CRUD operation exception"
+    } ],
+    "link" : {
+      "rel" : "related",
+      "href" : "https://212.77.180.253:9060/ers/config/endpoint",
+      "type" : "application/xml"
+    }
+  }
+} for 78:8C:77:32:E2:B2
+2022-09-05 11:10:13,505 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:10:13,770 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 201 0
+2022-09-05 11:10:13,772 : DEBUG : Status code: 201 for 7C:70:DB:2D:1B:53
+2022-09-05 11:10:13,774 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:10:14,035 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 201 0
+2022-09-05 11:10:14,037 : DEBUG : Status code: 201 for A4:BB:6D:92:33:6F
+2022-09-05 11:10:14,039 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:10:14,391 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 201 0
+2022-09-05 11:10:14,394 : DEBUG : Status code: 201 for 78:8C:77:32:D0:43
+2022-09-05 11:10:14,397 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:10:14,903 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 201 0
+2022-09-05 11:10:14,906 : DEBUG : Status code: 201 for 7C:70:DB:2A:F2:38
+2022-09-05 11:10:14,908 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:10:15,397 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 201 0
+2022-09-05 11:10:15,398 : DEBUG : Status code: 201 for 78:8C:77:32:50:51
+2022-09-05 11:10:15,401 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:10:15,768 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 500 None
+2022-09-05 11:10:15,771 : ERROR : Status code: 500 and Response_text: {
+  "ERSResponse" : {
+    "operation" : "POST-create-endpoint",
+    "messages" : [ {
+      "title" : "Unable to create the endpoint. Endpoint \"78:8C:77:32:F2:94\" already exists.",
+      "type" : "ERROR",
+      "code" : "CRUD operation exception"
+    } ],
+    "link" : {
+      "rel" : "related",
+      "href" : "https://212.77.180.253:9060/ers/config/endpoint",
+      "type" : "application/xml"
+    }
+  }
+} for 78:8C:77:32:F2:94
+2022-09-05 11:10:15,777 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:10:16,049 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 201 0
+2022-09-05 11:10:16,052 : DEBUG : Status code: 201 for 7C:70:DB:2D:21:25
+2022-09-05 11:10:16,058 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:10:16,332 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 201 0
+2022-09-05 11:10:16,334 : DEBUG : Status code: 201 for 78:8C:77:32:10:A4
+2022-09-05 11:10:16,338 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:10:16,572 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 500 None
+2022-09-05 11:10:16,574 : ERROR : Status code: 500 and Response_text: {
+  "ERSResponse" : {
+    "operation" : "POST-create-endpoint",
+    "messages" : [ {
+      "title" : "Unable to create the endpoint. Endpoint \"78:8C:77:32:50:51\" already exists.",
+      "type" : "ERROR",
+      "code" : "CRUD operation exception"
+    } ],
+    "link" : {
+      "rel" : "related",
+      "href" : "https://212.77.180.253:9060/ers/config/endpoint",
+      "type" : "application/xml"
+    }
+  }
+} for 78:8C:77:32:50:51
+2022-09-05 11:10:16,580 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:10:16,859 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 500 None
+2022-09-05 11:10:16,861 : ERROR : Status code: 500 and Response_text: {
+  "ERSResponse" : {
+    "operation" : "POST-create-endpoint",
+    "messages" : [ {
+      "title" : "Unable to create the endpoint. Endpoint \"78:8C:77:32:D0:43\" already exists.",
+      "type" : "ERROR",
+      "code" : "CRUD operation exception"
+    } ],
+    "link" : {
+      "rel" : "related",
+      "href" : "https://212.77.180.253:9060/ers/config/endpoint",
+      "type" : "application/xml"
+    }
+  }
+} for 78:8C:77:32:D0:43
+2022-09-05 11:10:16,866 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:10:17,153 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 201 0
+2022-09-05 11:10:17,157 : DEBUG : Status code: 201 for A4:BB:6D:90:C3:22
+2022-09-05 11:10:17,160 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:10:17,446 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 201 0
+2022-09-05 11:10:17,448 : DEBUG : Status code: 201 for A4:BB:6D:8B:3F:C1
+2022-09-05 11:10:17,451 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:10:17,789 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 201 0
+2022-09-05 11:10:17,795 : DEBUG : Status code: 201 for 78:8C:77:32:30:06
+2022-09-05 11:10:17,799 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:10:18,125 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 201 0
+2022-09-05 11:10:18,127 : DEBUG : Status code: 201 for 78:8C:77:32:30:8D
+2022-09-05 11:10:18,130 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:10:18,405 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 500 None
+2022-09-05 11:10:18,407 : ERROR : Status code: 500 and Response_text: {
+  "ERSResponse" : {
+    "operation" : "POST-create-endpoint",
+    "messages" : [ {
+      "title" : "Unable to create the endpoint. Endpoint \"78:8C:77:32:10:A4\" already exists.",
+      "type" : "ERROR",
+      "code" : "CRUD operation exception"
+    } ],
+    "link" : {
+      "rel" : "related",
+      "href" : "https://212.77.180.253:9060/ers/config/endpoint",
+      "type" : "application/xml"
+    }
+  }
+} for 78:8C:77:32:10:A4
+2022-09-05 11:10:18,412 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:10:18,730 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 201 0
+2022-09-05 11:10:18,733 : DEBUG : Status code: 201 for A4:BB:6D:92:47:41
+2022-09-05 11:10:18,738 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:10:19,032 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 201 0
+2022-09-05 11:10:19,035 : DEBUG : Status code: 201 for A4:BB:6D:89:5A:20
+2022-09-05 11:10:19,039 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:10:19,290 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 500 None
+2022-09-05 11:10:19,293 : ERROR : Status code: 500 and Response_text: {
+  "ERSResponse" : {
+    "operation" : "POST-create-endpoint",
+    "messages" : [ {
+      "title" : "Unable to create the endpoint. Endpoint \"78:8C:77:32:30:8D\" already exists.",
+      "type" : "ERROR",
+      "code" : "CRUD operation exception"
+    } ],
+    "link" : {
+      "rel" : "related",
+      "href" : "https://212.77.180.253:9060/ers/config/endpoint",
+      "type" : "application/xml"
+    }
+  }
+} for 78:8C:77:32:30:8D
+2022-09-05 11:10:19,298 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:10:19,563 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 500 None
+2022-09-05 11:10:19,566 : ERROR : Status code: 500 and Response_text: {
+  "ERSResponse" : {
+    "operation" : "POST-create-endpoint",
+    "messages" : [ {
+      "title" : "Unable to create the endpoint. Endpoint \"78:8C:77:32:30:06\" already exists.",
+      "type" : "ERROR",
+      "code" : "CRUD operation exception"
+    } ],
+    "link" : {
+      "rel" : "related",
+      "href" : "https://212.77.180.253:9060/ers/config/endpoint",
+      "type" : "application/xml"
+    }
+  }
+} for 78:8C:77:32:30:06
+2022-09-05 11:10:19,574 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:10:19,898 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 201 0
+2022-09-05 11:10:19,901 : DEBUG : Status code: 201 for 78:8C:77:32:30:FD
+2022-09-05 11:10:19,904 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:10:20,230 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 201 0
+2022-09-05 11:10:20,234 : DEBUG : Status code: 201 for A4:BB:6D:89:68:E7
+2022-09-05 11:10:20,240 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:10:20,541 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 500 None
+2022-09-05 11:10:20,544 : ERROR : Status code: 500 and Response_text: {
+  "ERSResponse" : {
+    "operation" : "POST-create-endpoint",
+    "messages" : [ {
+      "title" : "Unable to create the endpoint. Endpoint \"78:8C:77:32:30:FD\" already exists.",
+      "type" : "ERROR",
+      "code" : "CRUD operation exception"
+    } ],
+    "link" : {
+      "rel" : "related",
+      "href" : "https://212.77.180.253:9060/ers/config/endpoint",
+      "type" : "application/xml"
+    }
+  }
+} for 78:8C:77:32:30:FD
+2022-09-05 11:10:20,550 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:10:20,874 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 201 0
+2022-09-05 11:10:20,876 : DEBUG : Status code: 201 for E8:6A:64:CD:5E:ED
+2022-09-05 11:10:20,879 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:10:21,012 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 400 None
+2022-09-05 11:10:21,015 : ERROR : Status code: 400 and Response_text: {
+  "ERSResponse" : {
+    "operation" : "POST-create-endpoint",
+    "messages" : [ {
+      "title" : "Validation Error - Illegal values: [Data validation failed for the following: raum(STRING) -> -]",
+      "type" : "ERROR",
+      "code" : "Application resource validation exception"
+    } ],
+    "link" : {
+      "rel" : "related",
+      "href" : "https://212.77.180.253:9060/ers/config/endpoint",
+      "type" : "application/xml"
+    }
+  }
+} for 64:6E:E0:B3:41:2E
+2022-09-05 11:10:21,020 : INFO : This programm took 62.334004163742065 seconds to execute
+2022-09-05 11:21:41,608 : INFO : 
+Parameters:
+2022-09-05 11:21:41,649 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:21:41,933 : DEBUG : https://212.77.180.253:9060 "GET /ers/config/endpoint HTTP/1.1" 200 None
+2022-09-05 11:21:41,939 : INFO : Endpoint found. Array with Mac and Id returned
+2022-09-05 11:21:41,940 : INFO : Reading actual data
+2022-09-05 11:21:54,205 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:21:54,420 : DEBUG : https://212.77.180.253:9060 "PUT /ers/config/endpoint/8b8ec870-2cfa-11ed-bcd2-2e5e4554d410 HTTP/1.1" 200 None
+2022-09-05 11:21:54,422 : DEBUG : Status code: 200 and Response_text: {
+  "UpdatedFieldsList" : {
+    "updatedField" : [ ]
+  }
+} for 78:8C:77:32:30:E3
+2022-09-05 11:21:54,426 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:21:54,625 : DEBUG : https://212.77.180.253:9060 "PUT /ers/config/endpoint/8bb90cc0-2cfa-11ed-bcd2-2e5e4554d410 HTTP/1.1" 200 None
+2022-09-05 11:21:54,628 : DEBUG : Status code: 200 and Response_text: {
+  "UpdatedFieldsList" : {
+    "updatedField" : [ ]
+  }
+} for 78:8C:77:32:12:C8
+2022-09-05 11:21:54,631 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:21:54,849 : DEBUG : https://212.77.180.253:9060 "PUT /ers/config/endpoint/8be4b0a0-2cfa-11ed-bcd2-2e5e4554d410 HTTP/1.1" 200 None
+2022-09-05 11:21:54,851 : DEBUG : Status code: 200 and Response_text: {
+  "UpdatedFieldsList" : {
+    "updatedField" : [ ]
+  }
+} for 78:8C:77:32:E2:B2
+2022-09-05 11:21:54,854 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:21:55,497 : DEBUG : https://212.77.180.253:9060 "PUT /ers/config/endpoint/8bb90cc0-2cfa-11ed-bcd2-2e5e4554d410 HTTP/1.1" 200 None
+2022-09-05 11:21:55,500 : DEBUG : Status code: 200 and Response_text: {
+  "UpdatedFieldsList" : {
+    "updatedField" : [ {
+      "field" : "customAttributes",
+      "oldValue" : "{raumadresse=DGR00003_Dummy, feldgruppe=PRINTER, komponentennr=KDR-0000965647, komponentestatus=RESERVE, computername=, systemname=Lager JUM, betriebsmodell=Betreut, seriennr=460013741ZL48, komponentenklasse=Laser Printer, admingruppe=BIT-2L-R43-DG-TFS, systemklasse=IT_Stock, orgeinheit_nr=Land BW JUM 01, orgeinheit_beschreibung=Ministerium der Justiz und fÃ¼r Europa Schillerplatz, systemstatus=ACT, komponententyp=Lexmark MS521dn, erstellt=2022-05-31T08:42:53Z[UTC], raum=Unbekannt, adresse=LEINFELDEN-ECHTERDINGEN-DAIMLERSTRAÃŸE6-70771, systemart=Stock, systemnr=SST-0000000482, geaendert=2022-07-02T09:42:30Z[UTC], kunde=JUM}",
+      "newValue" : "{raumadresse=JUM00071_XX_115, feldgruppe=PRINTER, komponentennr=KDR-0000965647, komponentestatus=ACT, computername=, systemname=AGEADH01CD0013, betriebsmodell=Betreut, seriennr=460013741ZL48, komponentenklasse=Laser Printer, admingruppe=BIT-2L-R43-DG-TFS, systemklasse=IT_Workplace, orgeinheit_nr=AG Adelsheim, orgeinheit_beschreibung=Amtsgericht Adelsheim, systemstatus=INST, komponententyp=Lexmark MS521dn, erstellt=2022-05-31T08:42:53Z[UTC], raum=115, adresse=ADELSHEIM-RIETSTRAÃŸE4-74740, systemart=Workstation Desktop, systemnr=SCD-0000077952, geaendert=2022-07-02T09:45:50Z[UTC], kunde=GESTA}"
+    } ]
+  }
+} for 78:8C:77:32:12:C8
+2022-09-05 11:21:55,503 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:21:55,689 : DEBUG : https://212.77.180.253:9060 "PUT /ers/config/endpoint/8c347e50-2cfa-11ed-bcd2-2e5e4554d410 HTTP/1.1" 200 None
+2022-09-05 11:21:55,692 : DEBUG : Status code: 200 and Response_text: {
+  "UpdatedFieldsList" : {
+    "updatedField" : [ ]
+  }
+} for A4:BB:6D:92:2F:60
+2022-09-05 11:21:55,698 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:21:55,930 : DEBUG : https://212.77.180.253:9060 "PUT /ers/config/endpoint/8c629330-2cfa-11ed-bcd2-2e5e4554d410 HTTP/1.1" 200 None
+2022-09-05 11:21:55,933 : DEBUG : Status code: 200 and Response_text: {
+  "UpdatedFieldsList" : {
+    "updatedField" : [ ]
+  }
+} for 78:8C:77:32:32:93
+2022-09-05 11:21:55,936 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:21:56,166 : DEBUG : https://212.77.180.253:9060 "PUT /ers/config/endpoint/8c8b77f0-2cfa-11ed-bcd2-2e5e4554d410 HTTP/1.1" 200 None
+2022-09-05 11:21:56,168 : DEBUG : Status code: 200 and Response_text: {
+  "UpdatedFieldsList" : {
+    "updatedField" : [ ]
+  }
+} for 78:8C:77:32:F2:94
+2022-09-05 11:21:56,171 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:21:56,821 : DEBUG : https://212.77.180.253:9060 "PUT /ers/config/endpoint/8c629330-2cfa-11ed-bcd2-2e5e4554d410 HTTP/1.1" 200 None
+2022-09-05 11:21:56,824 : DEBUG : Status code: 200 and Response_text: {
+  "UpdatedFieldsList" : {
+    "updatedField" : [ {
+      "field" : "customAttributes",
+      "oldValue" : "{raumadresse=DGR00003_Dummy, feldgruppe=PRINTER, komponentennr=KDR-0000965531, komponentestatus=RESERVE, computername=, systemname=Lager JUM, betriebsmodell=Betreut, seriennr=460013741ZL3N, komponentenklasse=Laser Printer, admingruppe=BIT-2L-R43-DG-TFS, systemklasse=IT_Stock, orgeinheit_nr=Land BW JUM 01, orgeinheit_beschreibung=Ministerium der Justiz und fÃ¼r Europa Schillerplatz, systemstatus=ACT, komponententyp=Lexmark MS521dn, erstellt=2022-05-31T08:42:53Z[UTC], raum=Unbekannt, adresse=LEINFELDEN-ECHTERDINGEN-DAIMLERSTRAÃŸE6-70771, systemart=Stock, systemnr=SST-0000000482, geaendert=2022-07-02T09:48:55Z[UTC], kunde=JUM}",
+      "newValue" : "{raumadresse=JUM00071_XX_113, feldgruppe=PRINTER, komponentennr=KDR-0000965531, komponentestatus=ACT, computername=, systemname=AGEADH01CN0008, betriebsmodell=Betreut, seriennr=460013741ZL3N, komponentenklasse=Laser Printer, admingruppe=BIT-2L-R43-DG-TFS, systemklasse=IT_Workplace, orgeinheit_nr=AG Adelsheim, orgeinheit_beschreibung=Amtsgericht Adelsheim, systemstatus=INST, komponententyp=Lexmark MS521dn, erstellt=2022-05-31T08:42:53Z[UTC], raum=113, adresse=ADELSHEIM-RIETSTRAÃŸE4-74740, systemart=Workstation Notebook, systemnr=SCN-0000062341, geaendert=2022-07-02T09:51:47Z[UTC], kunde=GESTA}"
+    } ]
+  }
+} for 78:8C:77:32:32:93
+2022-09-05 11:21:56,827 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:21:57,524 : DEBUG : https://212.77.180.253:9060 "PUT /ers/config/endpoint/8be4b0a0-2cfa-11ed-bcd2-2e5e4554d410 HTTP/1.1" 200 None
+2022-09-05 11:21:57,526 : DEBUG : Status code: 200 and Response_text: {
+  "UpdatedFieldsList" : {
+    "updatedField" : [ {
+      "field" : "customAttributes",
+      "oldValue" : "{raumadresse=DGR00003_Dummy, feldgruppe=PRINTER, komponentennr=KDR-0000965435, komponentestatus=RESERVE, computername=, systemname=Lager JUM, betriebsmodell=Betreut, seriennr=460013741ZL2R, komponentenklasse=Laser Printer, admingruppe=BIT-2L-R43-DG-TFS, systemklasse=IT_Stock, orgeinheit_nr=Land BW JUM 01, orgeinheit_beschreibung=Ministerium der Justiz und fÃ¼r Europa Schillerplatz, systemstatus=ACT, komponententyp=Lexmark MS521dn, erstellt=2022-05-31T08:42:53Z[UTC], raum=Unbekannt, adresse=LEINFELDEN-ECHTERDINGEN-DAIMLERSTRAÃŸE6-70771, systemart=Stock, systemnr=SST-0000000482, geaendert=2022-07-02T09:44:57Z[UTC], kunde=JUM}",
+      "newValue" : "{raumadresse=JUM00071_XX_115, feldgruppe=PRINTER, komponentennr=KDR-0000965435, komponentestatus=ACT, computername=, systemname=AGEADH01CD0012, betriebsmodell=Betreut, seriennr=460013741ZL2R, komponentenklasse=Laser Printer, admingruppe=BIT-2L-R43-DG-TFS, systemklasse=IT_Workplace, orgeinheit_nr=AG Adelsheim, orgeinheit_beschreibung=Amtsgericht Adelsheim, systemstatus=INST, komponententyp=Lexmark MS521dn, erstellt=2022-05-31T08:42:53Z[UTC], raum=115, adresse=ADELSHEIM-RIETSTRAÃŸE4-74740, systemart=Workstation Desktop, systemnr=SCD-0000077951, geaendert=2022-07-02T09:51:30Z[UTC], kunde=GESTA}"
+    } ]
+  }
+} for 78:8C:77:32:E2:B2
+2022-09-05 11:21:57,529 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:21:57,724 : DEBUG : https://212.77.180.253:9060 "PUT /ers/config/endpoint/8cfcb050-2cfa-11ed-bcd2-2e5e4554d410 HTTP/1.1" 200 None
+2022-09-05 11:21:57,726 : DEBUG : Status code: 200 and Response_text: {
+  "UpdatedFieldsList" : {
+    "updatedField" : [ ]
+  }
+} for 7C:70:DB:2D:1B:53
+2022-09-05 11:21:57,729 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:21:57,916 : DEBUG : https://212.77.180.253:9060 "PUT /ers/config/endpoint/8d251fe0-2cfa-11ed-bcd2-2e5e4554d410 HTTP/1.1" 200 None
+2022-09-05 11:21:57,920 : DEBUG : Status code: 200 and Response_text: {
+  "UpdatedFieldsList" : {
+    "updatedField" : [ ]
+  }
+} for A4:BB:6D:92:33:6F
+2022-09-05 11:21:57,923 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:21:58,128 : DEBUG : https://212.77.180.253:9060 "PUT /ers/config/endpoint/8d4cf330-2cfa-11ed-bcd2-2e5e4554d410 HTTP/1.1" 200 None
+2022-09-05 11:21:58,131 : DEBUG : Status code: 200 and Response_text: {
+  "UpdatedFieldsList" : {
+    "updatedField" : [ ]
+  }
+} for 78:8C:77:32:D0:43
+2022-09-05 11:21:58,135 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:21:58,319 : DEBUG : https://212.77.180.253:9060 "PUT /ers/config/endpoint/8d965840-2cfa-11ed-bcd2-2e5e4554d410 HTTP/1.1" 200 None
+2022-09-05 11:21:58,321 : DEBUG : Status code: 200 and Response_text: {
+  "UpdatedFieldsList" : {
+    "updatedField" : [ ]
+  }
+} for 7C:70:DB:2A:F2:38
+2022-09-05 11:21:58,324 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:21:58,515 : DEBUG : https://212.77.180.253:9060 "PUT /ers/config/endpoint/8de20740-2cfa-11ed-bcd2-2e5e4554d410 HTTP/1.1" 200 None
+2022-09-05 11:21:58,518 : DEBUG : Status code: 200 and Response_text: {
+  "UpdatedFieldsList" : {
+    "updatedField" : [ ]
+  }
+} for 78:8C:77:32:50:51
+2022-09-05 11:21:58,522 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:21:59,272 : DEBUG : https://212.77.180.253:9060 "PUT /ers/config/endpoint/8c8b77f0-2cfa-11ed-bcd2-2e5e4554d410 HTTP/1.1" 200 None
+2022-09-05 11:21:59,273 : DEBUG : Status code: 200 and Response_text: {
+  "UpdatedFieldsList" : {
+    "updatedField" : [ {
+      "field" : "customAttributes",
+      "oldValue" : "{raumadresse=DGR00003_Dummy, feldgruppe=PRINTER, komponentennr=KDR-0000965685, komponentestatus=RESERVE, computername=, systemname=Lager JUM, betriebsmodell=Betreut, seriennr=460013741ZL3F, komponentenklasse=Laser Printer, admingruppe=BIT-2L-R43-DG-TFS, systemklasse=IT_Stock, orgeinheit_nr=Land BW JUM 01, orgeinheit_beschreibung=Ministerium der Justiz und fÃ¼r Europa Schillerplatz, systemstatus=ACT, komponententyp=Lexmark MS521dn, erstellt=2022-05-31T08:42:53Z[UTC], raum=Unbekannt, adresse=LEINFELDEN-ECHTERDINGEN-DAIMLERSTRAÃŸE6-70771, systemart=Stock, systemnr=SST-0000000482, geaendert=2022-07-02T09:51:15Z[UTC], kunde=JUM}",
+      "newValue" : "{raumadresse=JUM00071_XX_111, feldgruppe=PRINTER, komponentennr=KDR-0000965685, komponentestatus=ACT, computername=, systemname=AGEADH01CN0007, betriebsmodell=Betreut, seriennr=460013741ZL3F, komponentenklasse=Laser Printer, admingruppe=BIT-2L-R43-DG-TFS, systemklasse=IT_Workplace, orgeinheit_nr=AG Adelsheim, orgeinheit_beschreibung=Amtsgericht Adelsheim, systemstatus=INST, komponententyp=Lexmark MS521dn, erstellt=2022-05-31T08:42:53Z[UTC], raum=111, adresse=ADELSHEIM-RIETSTRAÃŸE4-74740, systemart=Workstation Notebook, systemnr=SCN-0000062340, geaendert=2022-07-02T09:57:46Z[UTC], kunde=GESTA}"
+    } ]
+  }
+} for 78:8C:77:32:F2:94
+2022-09-05 11:21:59,276 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:21:59,480 : DEBUG : https://212.77.180.253:9060 "PUT /ers/config/endpoint/8e586fc0-2cfa-11ed-bcd2-2e5e4554d410 HTTP/1.1" 200 None
+2022-09-05 11:21:59,483 : DEBUG : Status code: 200 and Response_text: {
+  "UpdatedFieldsList" : {
+    "updatedField" : [ ]
+  }
+} for 7C:70:DB:2D:21:25
+2022-09-05 11:21:59,486 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:21:59,693 : DEBUG : https://212.77.180.253:9060 "PUT /ers/config/endpoint/8e835050-2cfa-11ed-bcd2-2e5e4554d410 HTTP/1.1" 200 None
+2022-09-05 11:21:59,696 : DEBUG : Status code: 200 and Response_text: {
+  "UpdatedFieldsList" : {
+    "updatedField" : [ ]
+  }
+} for 78:8C:77:32:10:A4
+2022-09-05 11:21:59,699 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:22:00,455 : DEBUG : https://212.77.180.253:9060 "PUT /ers/config/endpoint/8de20740-2cfa-11ed-bcd2-2e5e4554d410 HTTP/1.1" 200 None
+2022-09-05 11:22:00,458 : DEBUG : Status code: 200 and Response_text: {
+  "UpdatedFieldsList" : {
+    "updatedField" : [ {
+      "field" : "customAttributes",
+      "oldValue" : "{raumadresse=DGR00003_Dummy, feldgruppe=PRINTER, komponentennr=KDR-0000965871, komponentestatus=RESERVE, computername=, systemname=Lager JUM, betriebsmodell=Betreut, seriennr=460013741ZMBV, komponentenklasse=Laser Printer, admingruppe=BIT-2L-R43-DG-TFS, systemklasse=IT_Stock, orgeinheit_nr=Land BW JUM 01, orgeinheit_beschreibung=Ministerium der Justiz und fÃ¼r Europa Schillerplatz, systemstatus=ACT, komponententyp=Lexmark MS521dn, erstellt=2022-05-31T08:42:53Z[UTC], raum=Unbekannt, adresse=LEINFELDEN-ECHTERDINGEN-DAIMLERSTRAÃŸE6-70771, systemart=Stock, systemnr=SST-0000000482, geaendert=2022-07-02T09:55:53Z[UTC], kunde=JUM}",
+      "newValue" : "{raumadresse=JUM00071_EG_007, feldgruppe=PRINTER, komponentennr=KDR-0000965871, komponentestatus=ACT, computername=, systemname=AGEADH01CD0010, betriebsmodell=Betreut, seriennr=460013741ZMBV, komponentenklasse=Laser Printer, admingruppe=BIT-2L-R43-DG-TFS, systemklasse=IT_Workplace, orgeinheit_nr=AG Adelsheim, orgeinheit_beschreibung=Amtsgericht Adelsheim, systemstatus=INST, komponententyp=Lexmark MS521dn, erstellt=2022-05-31T08:42:53Z[UTC], raum=007, adresse=ADELSHEIM-RIETSTRAÃŸE4-74740, systemart=Workstation Desktop, systemnr=SCD-0000077949, geaendert=2022-07-02T09:59:06Z[UTC], kunde=GESTA}"
+    } ]
+  }
+} for 78:8C:77:32:50:51
+2022-09-05 11:22:00,461 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:22:01,171 : DEBUG : https://212.77.180.253:9060 "PUT /ers/config/endpoint/8d4cf330-2cfa-11ed-bcd2-2e5e4554d410 HTTP/1.1" 200 None
+2022-09-05 11:22:01,175 : DEBUG : Status code: 200 and Response_text: {
+  "UpdatedFieldsList" : {
+    "updatedField" : [ {
+      "field" : "customAttributes",
+      "oldValue" : "{raumadresse=DGR00003_Dummy, feldgruppe=PRINTER, komponentennr=KDR-0000965221, komponentestatus=RESERVE, computername=, systemname=Lager JUM, betriebsmodell=Betreut, seriennr=460013741ZMCC, komponentenklasse=Laser Printer, admingruppe=BIT-2L-R43-DG-TFS, systemklasse=IT_Stock, orgeinheit_nr=Land BW JUM 01, orgeinheit_beschreibung=Ministerium der Justiz und fÃ¼r Europa Schillerplatz, systemstatus=ACT, komponententyp=Lexmark MS521dn, erstellt=2022-05-31T08:42:53Z[UTC], raum=Unbekannt, adresse=LEINFELDEN-ECHTERDINGEN-DAIMLERSTRAÃŸE6-70771, systemart=Stock, systemnr=SST-0000000482, geaendert=2022-07-02T09:53:11Z[UTC], kunde=JUM}",
+      "newValue" : "{raumadresse=JUM00071_EG_007, feldgruppe=PRINTER, komponentennr=KDR-0000965221, komponentestatus=ACT, computername=, systemname=AGEADH01CD0011, betriebsmodell=Betreut, seriennr=460013741ZMCC, komponentenklasse=Laser Printer, admingruppe=BIT-2L-R43-DG-TFS, systemklasse=IT_Workplace, orgeinheit_nr=AG Adelsheim, orgeinheit_beschreibung=Amtsgericht Adelsheim, systemstatus=INST, komponententyp=Lexmark MS521dn, erstellt=2022-05-31T08:42:53Z[UTC], raum=007, adresse=ADELSHEIM-RIETSTRAÃŸE4-74740, systemart=Workstation Desktop, systemnr=SCD-0000077950, geaendert=2022-07-02T09:58:08Z[UTC], kunde=GESTA}"
+    } ]
+  }
+} for 78:8C:77:32:D0:43
+2022-09-05 11:22:01,180 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:22:01,376 : DEBUG : https://212.77.180.253:9060 "PUT /ers/config/endpoint/8f00bdb0-2cfa-11ed-bcd2-2e5e4554d410 HTTP/1.1" 200 None
+2022-09-05 11:22:01,382 : DEBUG : Status code: 200 and Response_text: {
+  "UpdatedFieldsList" : {
+    "updatedField" : [ ]
+  }
+} for A4:BB:6D:90:C3:22
+2022-09-05 11:22:01,385 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:22:01,584 : DEBUG : https://212.77.180.253:9060 "PUT /ers/config/endpoint/8f2b7730-2cfa-11ed-bcd2-2e5e4554d410 HTTP/1.1" 200 None
+2022-09-05 11:22:01,586 : DEBUG : Status code: 200 and Response_text: {
+  "UpdatedFieldsList" : {
+    "updatedField" : [ ]
+  }
+} for A4:BB:6D:8B:3F:C1
+2022-09-05 11:22:01,589 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:22:01,773 : DEBUG : https://212.77.180.253:9060 "PUT /ers/config/endpoint/8f5f5870-2cfa-11ed-bcd2-2e5e4554d410 HTTP/1.1" 200 None
+2022-09-05 11:22:01,775 : DEBUG : Status code: 200 and Response_text: {
+  "UpdatedFieldsList" : {
+    "updatedField" : [ ]
+  }
+} for 78:8C:77:32:30:06
+2022-09-05 11:22:01,777 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:22:01,965 : DEBUG : https://212.77.180.253:9060 "PUT /ers/config/endpoint/8f927660-2cfa-11ed-bcd2-2e5e4554d410 HTTP/1.1" 200 None
+2022-09-05 11:22:01,968 : DEBUG : Status code: 200 and Response_text: {
+  "UpdatedFieldsList" : {
+    "updatedField" : [ ]
+  }
+} for 78:8C:77:32:30:8D
+2022-09-05 11:22:01,972 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:22:02,731 : DEBUG : https://212.77.180.253:9060 "PUT /ers/config/endpoint/8e835050-2cfa-11ed-bcd2-2e5e4554d410 HTTP/1.1" 200 None
+2022-09-05 11:22:02,733 : DEBUG : Status code: 200 and Response_text: {
+  "UpdatedFieldsList" : {
+    "updatedField" : [ {
+      "field" : "customAttributes",
+      "oldValue" : "{raumadresse=DGR00003_Dummy, feldgruppe=PRINTER, komponentennr=KDR-0000965251, komponentestatus=RESERVE, computername=, systemname=Lager JUM, betriebsmodell=Betreut, seriennr=460013741ZMC4, komponentenklasse=Laser Printer, admingruppe=BIT-2L-R43-DG-TFS, systemklasse=IT_Stock, orgeinheit_nr=Land BW JUM 01, orgeinheit_beschreibung=Ministerium der Justiz und fÃ¼r Europa Schillerplatz, systemstatus=ACT, komponententyp=Lexmark MS521dn, erstellt=2022-05-31T08:42:53Z[UTC], raum=Unbekannt, adresse=LEINFELDEN-ECHTERDINGEN-DAIMLERSTRAÃŸE6-70771, systemart=Stock, systemnr=SST-0000000482, geaendert=2022-07-02T09:58:59Z[UTC], kunde=JUM}",
+      "newValue" : "{raumadresse=JUM00071_XX_112, feldgruppe=PRINTER, komponentennr=KDR-0000965251, komponentestatus=ACT, computername=, systemname=AGEADH01CD0008, betriebsmodell=Betreut, seriennr=460013741ZMC4, komponentenklasse=Laser Printer, admingruppe=BIT-2L-R43-DG-TFS, systemklasse=IT_Workplace, orgeinheit_nr=AG Adelsheim, orgeinheit_beschreibung=Amtsgericht Adelsheim, systemstatus=INST, komponententyp=Lexmark MS521dn, erstellt=2022-05-31T08:42:53Z[UTC], raum=112, adresse=ADELSHEIM-RIETSTRAÃŸE4-74740, systemart=Workstation Desktop, systemnr=SCD-0000077947, geaendert=2022-07-02T10:05:32Z[UTC], kunde=GESTA}"
+    } ]
+  }
+} for 78:8C:77:32:10:A4
+2022-09-05 11:22:02,736 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:22:02,936 : DEBUG : https://212.77.180.253:9060 "PUT /ers/config/endpoint/8fef8a80-2cfa-11ed-bcd2-2e5e4554d410 HTTP/1.1" 200 None
+2022-09-05 11:22:02,938 : DEBUG : Status code: 200 and Response_text: {
+  "UpdatedFieldsList" : {
+    "updatedField" : [ ]
+  }
+} for A4:BB:6D:92:47:41
+2022-09-05 11:22:02,941 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:22:03,132 : DEBUG : https://212.77.180.253:9060 "PUT /ers/config/endpoint/901ed7e0-2cfa-11ed-bcd2-2e5e4554d410 HTTP/1.1" 200 None
+2022-09-05 11:22:03,135 : DEBUG : Status code: 200 and Response_text: {
+  "UpdatedFieldsList" : {
+    "updatedField" : [ ]
+  }
+} for A4:BB:6D:89:5A:20
+2022-09-05 11:22:03,139 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:22:03,890 : DEBUG : https://212.77.180.253:9060 "PUT /ers/config/endpoint/8f927660-2cfa-11ed-bcd2-2e5e4554d410 HTTP/1.1" 200 None
+2022-09-05 11:22:03,892 : DEBUG : Status code: 200 and Response_text: {
+  "UpdatedFieldsList" : {
+    "updatedField" : [ {
+      "field" : "customAttributes",
+      "oldValue" : "{raumadresse=DGR00003_Dummy, feldgruppe=PRINTER, komponentennr=KDR-0000965568, komponentestatus=RESERVE, computername=, systemname=Lager JUM, betriebsmodell=Betreut, seriennr=460013741ZMBD, komponentenklasse=Laser Printer, admingruppe=BIT-2L-R43-DG-TFS, systemklasse=IT_Stock, orgeinheit_nr=Land BW JUM 01, orgeinheit_beschreibung=Ministerium der Justiz und fÃ¼r Europa Schillerplatz, systemstatus=ACT, komponententyp=Lexmark MS521dn, erstellt=2022-05-31T08:42:53Z[UTC], raum=Unbekannt, adresse=LEINFELDEN-ECHTERDINGEN-DAIMLERSTRAÃŸE6-70771, systemart=Stock, systemnr=SST-0000000482, geaendert=2022-07-02T10:05:17Z[UTC], kunde=JUM}",
+      "newValue" : "{raumadresse=JUM00071_XX_113, feldgruppe=PRINTER, komponentennr=KDR-0000965568, komponentestatus=ACT, computername=, systemname=US-BK-AnBohlender, betriebsmodell=Betreut, seriennr=460013741ZMBD, komponentenklasse=Laser Printer, admingruppe=BIT-2L-R43-DG-TFS, systemklasse=IT_Person, orgeinheit_nr=AG Adelsheim, orgeinheit_beschreibung=Amtsgericht Adelsheim, systemstatus=ACT, komponententyp=Lexmark MS521dn, erstellt=2022-05-31T08:42:53Z[UTC], raum=113, adresse=ADELSHEIM-RIETSTRAÃŸE4-74740, systemart=User System, systemnr=US-BK-AnBohlender, geaendert=2022-07-02T10:09:51Z[UTC], kunde=GESTA}"
+    } ]
+  }
+} for 78:8C:77:32:30:8D
+2022-09-05 11:22:03,894 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:22:04,656 : DEBUG : https://212.77.180.253:9060 "PUT /ers/config/endpoint/8f5f5870-2cfa-11ed-bcd2-2e5e4554d410 HTTP/1.1" 200 None
+2022-09-05 11:22:04,658 : DEBUG : Status code: 200 and Response_text: {
+  "UpdatedFieldsList" : {
+    "updatedField" : [ {
+      "field" : "customAttributes",
+      "oldValue" : "{raumadresse=DGR00003_Dummy, feldgruppe=PRINTER, komponentennr=KDR-0000965109, komponentestatus=RESERVE, computername=, systemname=Lager JUM, betriebsmodell=Betreut, seriennr=460013741ZMBP, komponentenklasse=Laser Printer, admingruppe=BIT-2L-R43-DG-TFS, systemklasse=IT_Stock, orgeinheit_nr=Land BW JUM 01, orgeinheit_beschreibung=Ministerium der Justiz und fÃ¼r Europa Schillerplatz, systemstatus=ACT, komponententyp=Lexmark MS521dn, erstellt=2022-05-31T08:42:53Z[UTC], raum=Unbekannt, adresse=LEINFELDEN-ECHTERDINGEN-DAIMLERSTRAÃŸE6-70771, systemart=Stock, systemnr=SST-0000000482, geaendert=2022-07-02T10:01:31Z[UTC], kunde=JUM}",
+      "newValue" : "{raumadresse=JUM00071_EG_006, feldgruppe=PRINTER, komponentennr=KDR-0000965109, komponentestatus=ACT, computername=, systemname=PrÃ¤senzarbeitsplatz, betriebsmodell=Betreut, seriennr=460013741ZMBP, komponentenklasse=Laser Printer, admingruppe=BIT-2L-R43-DG-TFS, systemklasse=IT_Workplace, orgeinheit_nr=AG Adelsheim, orgeinheit_beschreibung=Amtsgericht Adelsheim, systemstatus=PLAN, komponententyp=Lexmark MS521dn, erstellt=2022-05-31T08:42:53Z[UTC], raum=006, adresse=ADELSHEIM-RIETSTRAÃŸE4-74740, systemart=Workstation Shared, systemnr=SCS-0000004783, geaendert=2022-07-02T10:09:51Z[UTC], kunde=GESTA}"
+    } ]
+  }
+} for 78:8C:77:32:30:06
+2022-09-05 11:22:04,660 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:22:04,853 : DEBUG : https://212.77.180.253:9060 "PUT /ers/config/endpoint/909f7990-2cfa-11ed-bcd2-2e5e4554d410 HTTP/1.1" 200 None
+2022-09-05 11:22:04,855 : DEBUG : Status code: 200 and Response_text: {
+  "UpdatedFieldsList" : {
+    "updatedField" : [ ]
+  }
+} for 78:8C:77:32:30:FD
+2022-09-05 11:22:04,859 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:22:05,100 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 500 None
+2022-09-05 11:22:05,103 : ERROR : Status code: 500 and Response_text: {
+  "ERSResponse" : {
+    "operation" : "POST-create-endpoint",
+    "messages" : [ {
+      "title" : "Unable to create the endpoint. Endpoint \"A4:BB:6D:89:68:E7\" already exists.",
+      "type" : "ERROR",
+      "code" : "CRUD operation exception"
+    } ],
+    "link" : {
+      "rel" : "related",
+      "href" : "https://212.77.180.253:9060/ers/config/endpoint",
+      "type" : "application/xml"
+    }
+  }
+} for A4:BB:6D:89:68:E7
+2022-09-05 11:22:05,108 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:22:05,802 : DEBUG : https://212.77.180.253:9060 "PUT /ers/config/endpoint/909f7990-2cfa-11ed-bcd2-2e5e4554d410 HTTP/1.1" 200 None
+2022-09-05 11:22:05,804 : DEBUG : Status code: 200 and Response_text: {
+  "UpdatedFieldsList" : {
+    "updatedField" : [ {
+      "field" : "customAttributes",
+      "oldValue" : "{raumadresse=DGR00003_Dummy, feldgruppe=PRINTER, komponentennr=KDR-0000965612, komponentestatus=RESERVE, computername=, systemname=Lager JUM, betriebsmodell=Betreut, seriennr=460013741ZMB7, komponentenklasse=Laser Printer, admingruppe=BIT-2L-R43-DG-TFS, systemklasse=IT_Stock, orgeinheit_nr=Land BW JUM 01, orgeinheit_beschreibung=Ministerium der Justiz und fÃ¼r Europa Schillerplatz, systemstatus=ACT, komponententyp=Lexmark MS521dn, erstellt=2022-05-31T08:42:53Z[UTC], raum=Unbekannt, adresse=LEINFELDEN-ECHTERDINGEN-DAIMLERSTRAÃŸE6-70771, systemart=Stock, systemnr=SST-0000000482, geaendert=2022-07-02T10:25:09Z[UTC], kunde=JUM}",
+      "newValue" : "{raumadresse=JUM00222_OG01_105, feldgruppe=PRINTER, komponentennr=KDR-0000965612, komponentestatus=ACT, computername=, systemname=AGESHA01CN0020, betriebsmodell=Betreut, seriennr=460013741ZMB7, komponentenklasse=Laser Printer, admingruppe=BIT-2L-R43-DG-TFS, systemklasse=IT_Workplace, orgeinheit_nr=AG SchwÃ¤bisch Hall, orgeinheit_beschreibung=Amtsgericht SchwÃ¤bisch-Hall Unterlimpurger Str. 8, systemstatus=ACT, komponententyp=Lexmark MS521dn, erstellt=2022-05-31T08:42:53Z[UTC], raum=105, adresse=SCHWÃ„BISCHHALL-UNTERLIMPURGERSTRAÃŸE8-74523, systemart=Workstation Notebook, systemnr=SCN-0000057735, geaendert=2022-07-02T10:27:21Z[UTC], kunde=GESTA}"
+    } ]
+  }
+} for 78:8C:77:32:30:FD
+2022-09-05 11:22:05,806 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:22:06,044 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 500 None
+2022-09-05 11:22:06,048 : ERROR : Status code: 500 and Response_text: {
+  "ERSResponse" : {
+    "operation" : "POST-create-endpoint",
+    "messages" : [ {
+      "title" : "Unable to create the endpoint. Endpoint \"E8:6A:64:CD:5E:ED\" already exists.",
+      "type" : "ERROR",
+      "code" : "CRUD operation exception"
+    } ],
+    "link" : {
+      "rel" : "related",
+      "href" : "https://212.77.180.253:9060/ers/config/endpoint",
+      "type" : "application/xml"
+    }
+  }
+} for E8:6A:64:CD:5E:ED
+2022-09-05 11:22:06,053 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:22:06,180 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 400 None
+2022-09-05 11:22:06,183 : ERROR : Status code: 400 and Response_text: {
+  "ERSResponse" : {
+    "operation" : "POST-create-endpoint",
+    "messages" : [ {
+      "title" : "Validation Error - Illegal values: [Data validation failed for the following: raum(STRING) -> -]",
+      "type" : "ERROR",
+      "code" : "Application resource validation exception"
+    } ],
+    "link" : {
+      "rel" : "related",
+      "href" : "https://212.77.180.253:9060/ers/config/endpoint",
+      "type" : "application/xml"
+    }
+  }
+} for 64:6E:E0:B3:41:2E
+2022-09-05 11:22:06,187 : INFO : This programm took 24.575652599334717 seconds to execute
+2022-09-05 11:25:30,716 : INFO : 
+Parameters:
+2022-09-05 11:25:30,747 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:25:30,920 : DEBUG : https://212.77.180.253:9060 "GET /ers/config/endpoint HTTP/1.1" 200 None
+2022-09-05 11:25:30,925 : INFO : No Endpoint found. Returned empty array
+2022-09-05 11:25:30,926 : INFO : Reading backlogs....
+2022-09-05 11:25:33,876 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:25:34,154 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 201 0
+2022-09-05 11:25:34,157 : DEBUG : Status code: 201 for 78:8C:77:32:30:E3
+2022-09-05 11:25:34,161 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:25:34,426 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 201 0
+2022-09-05 11:25:34,428 : DEBUG : Status code: 201 for 78:8C:77:32:12:C8
+2022-09-05 11:25:34,431 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:25:34,708 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 201 0
+2022-09-05 11:25:34,711 : DEBUG : Status code: 201 for 78:8C:77:32:E2:B2
+2022-09-05 11:25:34,715 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:25:34,948 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 500 None
+2022-09-05 11:25:34,950 : ERROR : Status code: 500 and Response_text: {
+  "ERSResponse" : {
+    "operation" : "POST-create-endpoint",
+    "messages" : [ {
+      "title" : "Unable to create the endpoint. Endpoint \"78:8C:77:32:12:C8\" already exists.",
+      "type" : "ERROR",
+      "code" : "CRUD operation exception"
+    } ],
+    "link" : {
+      "rel" : "related",
+      "href" : "https://212.77.180.253:9060/ers/config/endpoint",
+      "type" : "application/xml"
+    }
+  }
+} for 78:8C:77:32:12:C8
+2022-09-05 11:25:34,956 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:25:35,237 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 201 0
+2022-09-05 11:25:35,240 : DEBUG : Status code: 201 for A4:BB:6D:92:2F:60
+2022-09-05 11:25:35,243 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:25:35,514 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 201 0
+2022-09-05 11:25:35,517 : DEBUG : Status code: 201 for 78:8C:77:32:32:93
+2022-09-05 11:25:35,520 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:25:35,897 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 201 0
+2022-09-05 11:25:35,899 : DEBUG : Status code: 201 for 78:8C:77:32:F2:94
+2022-09-05 11:25:35,902 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:25:36,154 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 500 None
+2022-09-05 11:25:36,157 : ERROR : Status code: 500 and Response_text: {
+  "ERSResponse" : {
+    "operation" : "POST-create-endpoint",
+    "messages" : [ {
+      "title" : "Unable to create the endpoint. Endpoint \"78:8C:77:32:32:93\" already exists.",
+      "type" : "ERROR",
+      "code" : "CRUD operation exception"
+    } ],
+    "link" : {
+      "rel" : "related",
+      "href" : "https://212.77.180.253:9060/ers/config/endpoint",
+      "type" : "application/xml"
+    }
+  }
+} for 78:8C:77:32:32:93
+2022-09-05 11:25:36,162 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:25:36,429 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 500 None
+2022-09-05 11:25:36,432 : ERROR : Status code: 500 and Response_text: {
+  "ERSResponse" : {
+    "operation" : "POST-create-endpoint",
+    "messages" : [ {
+      "title" : "Unable to create the endpoint. Endpoint \"78:8C:77:32:E2:B2\" already exists.",
+      "type" : "ERROR",
+      "code" : "CRUD operation exception"
+    } ],
+    "link" : {
+      "rel" : "related",
+      "href" : "https://212.77.180.253:9060/ers/config/endpoint",
+      "type" : "application/xml"
+    }
+  }
+} for 78:8C:77:32:E2:B2
+2022-09-05 11:25:36,437 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:25:36,713 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 201 0
+2022-09-05 11:25:36,716 : DEBUG : Status code: 201 for 7C:70:DB:2D:1B:53
+2022-09-05 11:25:36,718 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:25:37,011 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 201 0
+2022-09-05 11:25:37,014 : DEBUG : Status code: 201 for A4:BB:6D:92:33:6F
+2022-09-05 11:25:37,017 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:25:37,296 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 201 0
+2022-09-05 11:25:37,298 : DEBUG : Status code: 201 for 78:8C:77:32:D0:43
+2022-09-05 11:25:37,301 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:25:37,666 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 201 0
+2022-09-05 11:25:37,668 : DEBUG : Status code: 201 for 7C:70:DB:2A:F2:38
+2022-09-05 11:25:37,670 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:25:37,948 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 201 0
+2022-09-05 11:25:37,950 : DEBUG : Status code: 201 for 78:8C:77:32:50:51
+2022-09-05 11:25:37,953 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:25:38,193 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 500 None
+2022-09-05 11:25:38,195 : ERROR : Status code: 500 and Response_text: {
+  "ERSResponse" : {
+    "operation" : "POST-create-endpoint",
+    "messages" : [ {
+      "title" : "Unable to create the endpoint. Endpoint \"78:8C:77:32:F2:94\" already exists.",
+      "type" : "ERROR",
+      "code" : "CRUD operation exception"
+    } ],
+    "link" : {
+      "rel" : "related",
+      "href" : "https://212.77.180.253:9060/ers/config/endpoint",
+      "type" : "application/xml"
+    }
+  }
+} for 78:8C:77:32:F2:94
+2022-09-05 11:25:38,202 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:25:38,492 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 201 0
+2022-09-05 11:25:38,494 : DEBUG : Status code: 201 for 7C:70:DB:2D:21:25
+2022-09-05 11:25:38,497 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:25:38,821 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 201 0
+2022-09-05 11:25:38,824 : DEBUG : Status code: 201 for 78:8C:77:32:10:A4
+2022-09-05 11:25:38,826 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:25:39,076 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 500 None
+2022-09-05 11:25:39,079 : ERROR : Status code: 500 and Response_text: {
+  "ERSResponse" : {
+    "operation" : "POST-create-endpoint",
+    "messages" : [ {
+      "title" : "Unable to create the endpoint. Endpoint \"78:8C:77:32:50:51\" already exists.",
+      "type" : "ERROR",
+      "code" : "CRUD operation exception"
+    } ],
+    "link" : {
+      "rel" : "related",
+      "href" : "https://212.77.180.253:9060/ers/config/endpoint",
+      "type" : "application/xml"
+    }
+  }
+} for 78:8C:77:32:50:51
+2022-09-05 11:25:39,085 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:25:39,341 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 500 None
+2022-09-05 11:25:39,344 : ERROR : Status code: 500 and Response_text: {
+  "ERSResponse" : {
+    "operation" : "POST-create-endpoint",
+    "messages" : [ {
+      "title" : "Unable to create the endpoint. Endpoint \"78:8C:77:32:D0:43\" already exists.",
+      "type" : "ERROR",
+      "code" : "CRUD operation exception"
+    } ],
+    "link" : {
+      "rel" : "related",
+      "href" : "https://212.77.180.253:9060/ers/config/endpoint",
+      "type" : "application/xml"
+    }
+  }
+} for 78:8C:77:32:D0:43
+2022-09-05 11:25:39,350 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:25:39,644 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 201 0
+2022-09-05 11:25:39,647 : DEBUG : Status code: 201 for A4:BB:6D:90:C3:22
+2022-09-05 11:25:39,650 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:25:39,932 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 201 0
+2022-09-05 11:25:39,934 : DEBUG : Status code: 201 for A4:BB:6D:8B:3F:C1
+2022-09-05 11:25:39,936 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:25:40,259 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 201 0
+2022-09-05 11:25:40,262 : DEBUG : Status code: 201 for 78:8C:77:32:30:06
+2022-09-05 11:25:40,265 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:25:40,561 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 201 0
+2022-09-05 11:25:40,564 : DEBUG : Status code: 201 for 78:8C:77:32:30:8D
+2022-09-05 11:25:40,567 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:25:40,863 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 500 None
+2022-09-05 11:25:40,865 : ERROR : Status code: 500 and Response_text: {
+  "ERSResponse" : {
+    "operation" : "POST-create-endpoint",
+    "messages" : [ {
+      "title" : "Unable to create the endpoint. Endpoint \"78:8C:77:32:10:A4\" already exists.",
+      "type" : "ERROR",
+      "code" : "CRUD operation exception"
+    } ],
+    "link" : {
+      "rel" : "related",
+      "href" : "https://212.77.180.253:9060/ers/config/endpoint",
+      "type" : "application/xml"
+    }
+  }
+} for 78:8C:77:32:10:A4
+2022-09-05 11:25:40,871 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:25:41,207 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 201 0
+2022-09-05 11:25:41,210 : DEBUG : Status code: 201 for A4:BB:6D:92:47:41
+2022-09-05 11:25:41,213 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:25:41,534 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 201 0
+2022-09-05 11:25:41,536 : DEBUG : Status code: 201 for A4:BB:6D:89:5A:20
+2022-09-05 11:25:41,539 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:25:41,792 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 500 None
+2022-09-05 11:25:41,794 : ERROR : Status code: 500 and Response_text: {
+  "ERSResponse" : {
+    "operation" : "POST-create-endpoint",
+    "messages" : [ {
+      "title" : "Unable to create the endpoint. Endpoint \"78:8C:77:32:30:8D\" already exists.",
+      "type" : "ERROR",
+      "code" : "CRUD operation exception"
+    } ],
+    "link" : {
+      "rel" : "related",
+      "href" : "https://212.77.180.253:9060/ers/config/endpoint",
+      "type" : "application/xml"
+    }
+  }
+} for 78:8C:77:32:30:8D
+2022-09-05 11:25:41,799 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:25:42,054 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 500 None
+2022-09-05 11:25:42,056 : ERROR : Status code: 500 and Response_text: {
+  "ERSResponse" : {
+    "operation" : "POST-create-endpoint",
+    "messages" : [ {
+      "title" : "Unable to create the endpoint. Endpoint \"78:8C:77:32:30:06\" already exists.",
+      "type" : "ERROR",
+      "code" : "CRUD operation exception"
+    } ],
+    "link" : {
+      "rel" : "related",
+      "href" : "https://212.77.180.253:9060/ers/config/endpoint",
+      "type" : "application/xml"
+    }
+  }
+} for 78:8C:77:32:30:06
+2022-09-05 11:25:42,062 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:25:42,355 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 201 0
+2022-09-05 11:25:42,358 : DEBUG : Status code: 201 for 78:8C:77:32:30:FD
+2022-09-05 11:25:42,360 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:25:42,638 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 201 0
+2022-09-05 11:25:42,641 : DEBUG : Status code: 201 for A4:BB:6D:89:68:E7
+2022-09-05 11:25:42,646 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:25:42,891 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 500 None
+2022-09-05 11:25:42,893 : ERROR : Status code: 500 and Response_text: {
+  "ERSResponse" : {
+    "operation" : "POST-create-endpoint",
+    "messages" : [ {
+      "title" : "Unable to create the endpoint. Endpoint \"78:8C:77:32:30:FD\" already exists.",
+      "type" : "ERROR",
+      "code" : "CRUD operation exception"
+    } ],
+    "link" : {
+      "rel" : "related",
+      "href" : "https://212.77.180.253:9060/ers/config/endpoint",
+      "type" : "application/xml"
+    }
+  }
+} for 78:8C:77:32:30:FD
+2022-09-05 11:25:42,898 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:25:43,183 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 201 0
+2022-09-05 11:25:43,186 : DEBUG : Status code: 201 for E8:6A:64:CD:5E:ED
+2022-09-05 11:25:43,190 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:25:43,316 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 400 None
+2022-09-05 11:25:43,319 : ERROR : Status code: 400 and Response_text: {
+  "ERSResponse" : {
+    "operation" : "POST-create-endpoint",
+    "messages" : [ {
+      "title" : "Validation Error - Illegal values: [Data validation failed for the following: raum(STRING) -> -]",
+      "type" : "ERROR",
+      "code" : "Application resource validation exception"
+    } ],
+    "link" : {
+      "rel" : "related",
+      "href" : "https://212.77.180.253:9060/ers/config/endpoint",
+      "type" : "application/xml"
+    }
+  }
+} for 64:6E:E0:B3:41:2E
+2022-09-05 11:26:04,234 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:26:04,514 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 201 0
+2022-09-05 11:26:04,517 : DEBUG : Status code: 201 for F4:EE:08:E7:2E:A6
+2022-09-05 11:26:04,520 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:26:04,792 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 201 0
+2022-09-05 11:26:04,796 : DEBUG : Status code: 201 for E0:70:EA:B1:78:8E
+2022-09-05 11:26:04,799 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:26:05,070 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 201 0
+2022-09-05 11:26:05,072 : DEBUG : Status code: 201 for 38:F3:AB:D9:A5:DE
+2022-09-05 11:26:05,075 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 11:26:05,360 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 201 0
+2022-09-05 11:26:05,362 : DEBUG : Status code: 201 for F8:0D:AC:18:D4:A0
+2022-09-05 11:26:13,112 : INFO : This programm took 42.39505743980408 seconds to execute
+2022-09-05 12:02:47,576 : INFO : 
+Parameters:
+2022-09-05 12:03:42,328 : INFO : 
+Parameters:
+2022-09-05 12:03:57,952 : INFO : 
+Parameters:
+2022-09-05 12:04:16,944 : INFO : 
+Parameters:
+2022-09-05 12:06:10,612 : INFO : 
+Parameters:
+2022-09-05 12:06:33,477 : INFO : 
+Parameters:
+2022-09-05 12:07:15,200 : INFO : 
+Parameters:
+2022-09-05 12:07:33,410 : INFO : 
+Parameters:
+2022-09-05 12:07:58,708 : INFO : 
+Parameters:
+2022-09-05 12:08:32,564 : INFO : 
+Parameters:
+2022-09-05 12:08:47,352 : INFO : 
+Parameters:
+2022-09-05 12:08:59,045 : INFO : 
+Parameters:
+2022-09-05 12:09:55,184 : INFO : 
+Parameters:
+2022-09-05 12:12:48,838 : INFO : 
+Parameters:
+2022-09-05 12:13:58,454 : INFO : 
+Parameters:
+2022-09-05 12:14:21,805 : INFO : 
+Parameters:
+2022-09-05 12:22:13,323 : INFO : 
+Parameters:
+2022-09-05 13:41:28,617 : INFO : 
+Parameters:
+2022-09-05 13:41:28,634 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 13:41:28,837 : DEBUG : https://212.77.180.253:9060 "GET /ers/config/endpoint HTTP/1.1" 200 None
+2022-09-05 13:41:28,845 : INFO : No Endpoint found. Returned empty array
+2022-09-05 13:41:28,845 : INFO : Reading backlogs....
+2022-09-05 13:41:28,854 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 13:41:29,160 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 201 0
+2022-09-05 13:41:29,162 : DEBUG : Status code: 201 for 78:8C:77:32:30:E3
+2022-09-05 13:41:29,164 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 13:41:29,540 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 201 0
+2022-09-05 13:41:29,542 : DEBUG : Status code: 201 for 78:8C:77:32:12:C8
+2022-09-05 13:41:29,545 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 13:41:29,819 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 201 0
+2022-09-05 13:41:29,821 : DEBUG : Status code: 201 for 78:8C:77:32:E2:B2
+2022-09-05 13:41:29,824 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 13:41:30,067 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 500 None
+2022-09-05 13:41:30,070 : ERROR : Status code: 500 and Response_text: {
+  "ERSResponse" : {
+    "operation" : "POST-create-endpoint",
+    "messages" : [ {
+      "title" : "Unable to create the endpoint. Endpoint \"78:8C:77:32:12:C8\" already exists.",
+      "type" : "ERROR",
+      "code" : "CRUD operation exception"
+    } ],
+    "link" : {
+      "rel" : "related",
+      "href" : "https://212.77.180.253:9060/ers/config/endpoint",
+      "type" : "application/xml"
+    }
+  }
+} for 78:8C:77:32:12:C8
+2022-09-05 13:41:30,078 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 13:41:30,390 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 201 0
+2022-09-05 13:41:30,393 : DEBUG : Status code: 201 for A4:BB:6D:92:2F:60
+2022-09-05 13:41:30,395 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 13:41:30,659 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 201 0
+2022-09-05 13:41:30,661 : DEBUG : Status code: 201 for 78:8C:77:32:32:93
+2022-09-05 13:41:30,664 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 13:41:30,943 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 201 0
+2022-09-05 13:41:30,945 : DEBUG : Status code: 201 for 78:8C:77:32:F2:94
+2022-09-05 13:41:30,948 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 13:41:31,222 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 500 None
+2022-09-05 13:41:31,225 : ERROR : Status code: 500 and Response_text: {
+  "ERSResponse" : {
+    "operation" : "POST-create-endpoint",
+    "messages" : [ {
+      "title" : "Unable to create the endpoint. Endpoint \"78:8C:77:32:32:93\" already exists.",
+      "type" : "ERROR",
+      "code" : "CRUD operation exception"
+    } ],
+    "link" : {
+      "rel" : "related",
+      "href" : "https://212.77.180.253:9060/ers/config/endpoint",
+      "type" : "application/xml"
+    }
+  }
+} for 78:8C:77:32:32:93
+2022-09-05 13:41:31,230 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 13:41:31,517 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 500 None
+2022-09-05 13:41:31,519 : ERROR : Status code: 500 and Response_text: {
+  "ERSResponse" : {
+    "operation" : "POST-create-endpoint",
+    "messages" : [ {
+      "title" : "Unable to create the endpoint. Endpoint \"78:8C:77:32:E2:B2\" already exists.",
+      "type" : "ERROR",
+      "code" : "CRUD operation exception"
+    } ],
+    "link" : {
+      "rel" : "related",
+      "href" : "https://212.77.180.253:9060/ers/config/endpoint",
+      "type" : "application/xml"
+    }
+  }
+} for 78:8C:77:32:E2:B2
+2022-09-05 13:41:31,525 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 13:41:31,815 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 201 0
+2022-09-05 13:41:31,817 : DEBUG : Status code: 201 for 7C:70:DB:2D:1B:53
+2022-09-05 13:41:31,820 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 13:41:32,088 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 201 0
+2022-09-05 13:41:32,090 : DEBUG : Status code: 201 for A4:BB:6D:92:33:6F
+2022-09-05 13:41:32,092 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 13:41:32,347 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 201 0
+2022-09-05 13:41:32,350 : DEBUG : Status code: 201 for 78:8C:77:32:D0:43
+2022-09-05 13:41:32,352 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 13:41:32,625 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 201 0
+2022-09-05 13:41:32,627 : DEBUG : Status code: 201 for 7C:70:DB:2A:F2:38
+2022-09-05 13:41:32,630 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 13:41:32,906 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 201 0
+2022-09-05 13:41:32,909 : DEBUG : Status code: 201 for 78:8C:77:32:50:51
+2022-09-05 13:41:32,913 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 13:41:33,151 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 500 None
+2022-09-05 13:41:33,153 : ERROR : Status code: 500 and Response_text: {
+  "ERSResponse" : {
+    "operation" : "POST-create-endpoint",
+    "messages" : [ {
+      "title" : "Unable to create the endpoint. Endpoint \"78:8C:77:32:F2:94\" already exists.",
+      "type" : "ERROR",
+      "code" : "CRUD operation exception"
+    } ],
+    "link" : {
+      "rel" : "related",
+      "href" : "https://212.77.180.253:9060/ers/config/endpoint",
+      "type" : "application/xml"
+    }
+  }
+} for 78:8C:77:32:F2:94
+2022-09-05 13:41:33,160 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 13:41:33,451 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 201 0
+2022-09-05 13:41:33,454 : DEBUG : Status code: 201 for 7C:70:DB:2D:21:25
+2022-09-05 13:41:33,457 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 13:41:33,728 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 201 0
+2022-09-05 13:41:33,730 : DEBUG : Status code: 201 for 78:8C:77:32:10:A4
+2022-09-05 13:41:33,733 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 13:41:33,967 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 500 None
+2022-09-05 13:41:33,969 : ERROR : Status code: 500 and Response_text: {
+  "ERSResponse" : {
+    "operation" : "POST-create-endpoint",
+    "messages" : [ {
+      "title" : "Unable to create the endpoint. Endpoint \"78:8C:77:32:50:51\" already exists.",
+      "type" : "ERROR",
+      "code" : "CRUD operation exception"
+    } ],
+    "link" : {
+      "rel" : "related",
+      "href" : "https://212.77.180.253:9060/ers/config/endpoint",
+      "type" : "application/xml"
+    }
+  }
+} for 78:8C:77:32:50:51
+2022-09-05 13:41:33,976 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 13:41:34,222 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 500 None
+2022-09-05 13:41:34,224 : ERROR : Status code: 500 and Response_text: {
+  "ERSResponse" : {
+    "operation" : "POST-create-endpoint",
+    "messages" : [ {
+      "title" : "Unable to create the endpoint. Endpoint \"78:8C:77:32:D0:43\" already exists.",
+      "type" : "ERROR",
+      "code" : "CRUD operation exception"
+    } ],
+    "link" : {
+      "rel" : "related",
+      "href" : "https://212.77.180.253:9060/ers/config/endpoint",
+      "type" : "application/xml"
+    }
+  }
+} for 78:8C:77:32:D0:43
+2022-09-05 13:41:34,229 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 13:41:34,496 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 201 0
+2022-09-05 13:41:34,498 : DEBUG : Status code: 201 for A4:BB:6D:90:C3:22
+2022-09-05 13:41:34,501 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 13:41:34,764 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 201 0
+2022-09-05 13:41:34,766 : DEBUG : Status code: 201 for A4:BB:6D:8B:3F:C1
+2022-09-05 13:41:34,769 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 13:41:35,120 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 201 0
+2022-09-05 13:41:35,123 : DEBUG : Status code: 201 for 78:8C:77:32:30:06
+2022-09-05 13:41:35,125 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 13:41:35,429 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 201 0
+2022-09-05 13:41:35,431 : DEBUG : Status code: 201 for 78:8C:77:32:30:8D
+2022-09-05 13:41:35,434 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 13:41:35,681 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 500 None
+2022-09-05 13:41:35,683 : ERROR : Status code: 500 and Response_text: {
+  "ERSResponse" : {
+    "operation" : "POST-create-endpoint",
+    "messages" : [ {
+      "title" : "Unable to create the endpoint. Endpoint \"78:8C:77:32:10:A4\" already exists.",
+      "type" : "ERROR",
+      "code" : "CRUD operation exception"
+    } ],
+    "link" : {
+      "rel" : "related",
+      "href" : "https://212.77.180.253:9060/ers/config/endpoint",
+      "type" : "application/xml"
+    }
+  }
+} for 78:8C:77:32:10:A4
+2022-09-05 13:41:35,690 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 13:41:35,986 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 201 0
+2022-09-05 13:41:35,989 : DEBUG : Status code: 201 for A4:BB:6D:92:47:41
+2022-09-05 13:41:35,993 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 13:41:36,266 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 201 0
+2022-09-05 13:41:36,268 : DEBUG : Status code: 201 for A4:BB:6D:89:5A:20
+2022-09-05 13:41:36,271 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 13:41:36,493 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 500 None
+2022-09-05 13:41:36,495 : ERROR : Status code: 500 and Response_text: {
+  "ERSResponse" : {
+    "operation" : "POST-create-endpoint",
+    "messages" : [ {
+      "title" : "Unable to create the endpoint. Endpoint \"78:8C:77:32:30:8D\" already exists.",
+      "type" : "ERROR",
+      "code" : "CRUD operation exception"
+    } ],
+    "link" : {
+      "rel" : "related",
+      "href" : "https://212.77.180.253:9060/ers/config/endpoint",
+      "type" : "application/xml"
+    }
+  }
+} for 78:8C:77:32:30:8D
+2022-09-05 13:41:36,501 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 13:41:36,762 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 500 None
+2022-09-05 13:41:36,767 : ERROR : Status code: 500 and Response_text: {
+  "ERSResponse" : {
+    "operation" : "POST-create-endpoint",
+    "messages" : [ {
+      "title" : "Unable to create the endpoint. Endpoint \"78:8C:77:32:30:06\" already exists.",
+      "type" : "ERROR",
+      "code" : "CRUD operation exception"
+    } ],
+    "link" : {
+      "rel" : "related",
+      "href" : "https://212.77.180.253:9060/ers/config/endpoint",
+      "type" : "application/xml"
+    }
+  }
+} for 78:8C:77:32:30:06
+2022-09-05 13:41:36,776 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 13:41:37,054 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 201 0
+2022-09-05 13:41:37,056 : DEBUG : Status code: 201 for 78:8C:77:32:30:FD
+2022-09-05 13:41:37,058 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 13:41:37,336 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 201 0
+2022-09-05 13:41:37,338 : DEBUG : Status code: 201 for A4:BB:6D:89:68:E7
+2022-09-05 13:41:37,341 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 13:41:37,573 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 500 None
+2022-09-05 13:41:37,575 : ERROR : Status code: 500 and Response_text: {
+  "ERSResponse" : {
+    "operation" : "POST-create-endpoint",
+    "messages" : [ {
+      "title" : "Unable to create the endpoint. Endpoint \"78:8C:77:32:30:FD\" already exists.",
+      "type" : "ERROR",
+      "code" : "CRUD operation exception"
+    } ],
+    "link" : {
+      "rel" : "related",
+      "href" : "https://212.77.180.253:9060/ers/config/endpoint",
+      "type" : "application/xml"
+    }
+  }
+} for 78:8C:77:32:30:FD
+2022-09-05 13:41:37,581 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 13:41:37,877 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 201 0
+2022-09-05 13:41:37,879 : DEBUG : Status code: 201 for E8:6A:64:CD:5E:ED
+2022-09-05 13:41:37,882 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 13:41:38,166 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 201 0
+2022-09-05 13:41:38,168 : DEBUG : Status code: 201 for 64:6E:E0:B3:41:2E
+2022-09-05 13:41:38,177 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 13:41:38,451 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 201 0
+2022-09-05 13:41:38,453 : DEBUG : Status code: 201 for F4:EE:08:E7:2E:A6
+2022-09-05 13:41:38,456 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 13:41:38,726 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 201 0
+2022-09-05 13:41:38,729 : DEBUG : Status code: 201 for E0:70:EA:B1:78:8E
+2022-09-05 13:41:38,731 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 13:41:38,998 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 201 0
+2022-09-05 13:41:39,000 : DEBUG : Status code: 201 for 38:F3:AB:D9:A5:DE
+2022-09-05 13:41:39,002 : DEBUG : Starting new HTTPS connection (1): 212.77.180.253:9060
+2022-09-05 13:41:39,280 : DEBUG : https://212.77.180.253:9060 "POST /ers/config/endpoint HTTP/1.1" 201 0
+2022-09-05 13:41:39,283 : DEBUG : Status code: 201 for F8:0D:AC:18:D4:A0
+2022-09-05 13:41:39,284 : INFO : This programm took 10.665191173553467 seconds to execute
