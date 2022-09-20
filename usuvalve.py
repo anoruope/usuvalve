@@ -30,7 +30,7 @@ import cppm_api
 import usu_api
 import importz
 import tranz
-
+import cppm_api as cpApi
 
 
 # Global var assignment
@@ -63,7 +63,7 @@ def load_scopes(type):
 #  ARGS: endpoints = JSON USU Valumeation API endpoint dict
 #  RETURNS: 'True' or 'False' if dictionary contains mac address field
 #
-def has_mac_address(endpoint):
+def has_mac_address(endpoint): # I couldn't get his to really work. Maybe i am missing something
     usu_cfg_mac_field = toolz.cfg['usu']['field_is_mac']
     if usu_cfg_mac_field in endpoint:
         return True
@@ -143,6 +143,16 @@ def cnt_endpoint_chg(old_dict, new_dict):
                               str(new_dict[key]))
     return cnt_chg
 
+'''
+prüft, ob der als Parameter übergebene Wert ein bestimmtes Kriterium erfüllt, 
+Ist dies der Fall, wird der Wert durch eine bestimmte Variable ersetzt.
+'''
+def validate_value(value):
+    if value == "-" or value == "." or value == "_" or value == "'" or value == ":" or value == "*" or value == "!" or value == "&" or value == "=" or value == '':
+        new_value = "Unbekannt"
+        return new_value
+    else:
+        return value
 
 
 # sync_to_cppm()
@@ -181,6 +191,81 @@ def sync_to_cppm(endpoint):
     return
 
 
+def create_ise_dict(endpoint):
+    """"
+    nimmt die verfügbaren Endpunkte in der ISE als Parameter 
+    und auch jedes einzelne Objekt innerhalb des json. 
+    Diese Werte werden verglichen und auf der Grundlage des 
+    Ergebnisses wird ein Aktualisierungs- oder Erstellungsvorgang durchgeführt
+    """
+
+    field_values = endpoint["field_mapping"]
+    
+    try:
+        json_data = {
+            "ERSEndPoint": {
+                "mac": endpoint["field_is_mac"],
+                "customAttributes": {
+                    "customAttributes": {
+                        "admingruppe": validate_value(field_values.get("admingruppe","")),
+                        "adresse": validate_value(field_values.get("adresse","")),
+                        "betriebsmodell": validate_value(field_values.get("betriebsmodell","")),
+                        "computername": validate_value(field_values.get("computername","")),
+                        "erstellt": validate_value(field_values.get("erstellt","")),
+                        "feldgruppe": validate_value(field_values.get("feldgruppe","")),
+                        "geaendert": validate_value(field_values.get("geaendert","")),
+                        "komponentenklasse": validate_value(field_values.get("komponentenklasse","")),
+                        "komponentennr": validate_value(field_values.get("komponentennr","")),
+                        "komponententyp": validate_value(field_values.get("komponententyp","")),
+                        "komponentestatus": validate_value(field_values.get("komponentestatus","")),
+                        "kunde": validate_value(field_values.get("kunde","")),
+                        "orgeinheit_beschreibung": validate_value(field_values.get("orgeinheit_beschreibung","")),
+                        "orgeinheit_nr": validate_value(field_values.get("orgeinheit_nr","")),
+                        "raum": validate_value(field_values.get("raum", "")),
+                        "raumadresse": validate_value(field_values.get("raumadresse","")),
+                        "seriennr": validate_value(field_values.get("seriennr","")),
+                        "systemart": validate_value(field_values.get("systemart","")),
+                        "systemklasse": validate_value(field_values.get("systemklasse","")),
+                        "systemname": validate_value(field_values.get("systemname","")),
+                        "systemnr": validate_value(field_values.get("systemnr","")),
+                        "systemstatus": validate_value(field_values.get("systemstatus",""))
+                    }
+                }
+            }
+        }
+        return json_data
+    except Exception as ex:
+        print("[INFO] Exception Detected: " + str(ex))
+        raise Exception('Error while reading endpoint: ' + str(ex))
+
+
+
+
+def sync_to_ise(endpoint):
+    usu_cfg_mac_field = toolz.cfg['usu']['field_is_mac']
+    try:
+        cppm_endpoint = cpApi.query_endpoint(endpoint[usu_cfg_mac_field])
+    except Exception as e:
+        toolz.logger.warning('Error quering clearpass endpoint data'+\
+                             ' for \''+endpoint[usu_cfg_mac_field]+'\':' +str(e))
+        return
+    try:
+        cppm_api_dict = importz.usu_to_cppm_dict(endpoint, toolz.cfg['usu'])
+        #cppm_api_dict = inject_insight_adaopt(cppm_api_dict, cppm_endpoint)
+        #toolz.logger.debug(str(endpoint))
+        #toolz.logger.debug(str(cppm_api_dict))
+    except Exception as e:
+        toolz.logger.warning('Error creating dict for ClearPass API: '+str(e))
+
+    new_ise_dict = create_ise_dict(cppm_api_dict) # Creates a modified ISE dictionary
+    if cppm_endpoint["SearchResult"]["total"] == 0:
+        #toolz.logger.info('Creating endpoint ' + endpoint[usu_cfg_mac_field]) Funktioniert nicht
+        cpApi.create_endpoint(new_ise_dict)
+    else:
+        resources = cppm_endpoint["SearchResult"]["resources"]
+        id = resources[0]["id"]
+        #toolz.logger.info('Modifying endpoint '+ endpoint[usu_cfg_mac_field]) Funktioniert nicht
+        cpApi.update_endpoint(cppm_api_dict, id)
 
 # staging_sync()
 #  Verifies for mandatory MAC address field in list of endpoint dicts. If full
@@ -191,21 +276,21 @@ def sync_to_cppm(endpoint):
 #        target = String of 'clearpass' or 'ise' what the target API will be
 #  RETURNS: None
 #
-def staging_sync(endpoints, target):
-    usu_cfg_mac_field = toolz.cfg['usu']['field_is_mac']
+def staging_sync(endpoints, target): # This is where my function should be called
+    # usu_cfg_mac_field = toolz.cfg['usu']['field_is_mac']
     for endpoint in endpoints:
-        if not has_mac_address(endpoint):
-            continue
-        if not toolz.full_sync and tranz.is_done(endpoint):
-            continue
-        toolz.logger.debug('Processing endpoint \''+\
-                           endpoint[usu_cfg_mac_field]+'\'')
+        # if not has_mac_address(endpoint):
+        #     continue
+        # if not toolz.full_sync and tranz.is_done(endpoint):
+        #     continue
+        # toolz.logger.debug('Processing endpoint \''+\
+        #                    endpoint[usu_cfg_mac_field]+'\'')
         try:
             if target == 'clearpass':
                 sync_to_cppm(endpoint)
             if target == 'ise':
-                #sync_to_ise(endpoint)
-                toolz.logger.warning('Syncing to ISE not yet implemented')
+                sync_to_ise(endpoint) # The magic happens here
+                #toolz.logger.warning('Syncing to ISE not yet implemented')
             if not toolz.full_sync:
                 tranz.append_cache(endpoint)
         except Exception as e:
@@ -223,7 +308,7 @@ def staging_sync(endpoints, target):
 toolz.logger.info('Starting USUvalve')
 while True:
     tranz.rotate_cache()
-    target = 'clearpass'
+    target = 'ise'
     scopes = load_scopes(target)
     for scope in scopes:
         if toolz.run_scope and scope['customer'] != toolz.run_scope:
@@ -233,7 +318,7 @@ while True:
         if toolz.full_sync:
             endpoints = (usu_api.get_listtsd(scope))
         else:
-            endpoints = (usu_api.get_ndays(scope,ndays=1))
+            endpoints = (usu_api.get_ndays(scope,ndays=1)) # if endpoint has been updated for a day
         staging_sync(endpoints, target)
         toolz.logger.debug('Completed '+str(len(endpoints)) + \
                            ' endpoints of customer user \'' + scope['user']+'\'')

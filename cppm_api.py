@@ -18,7 +18,10 @@
 #
 import requests
 import json
+import base64
 
+
+import toolz
 
 # Global var assignment
 #
@@ -26,6 +29,11 @@ authz_bearer = "Bearer 7521**********************3c23c2"
 host = "bitna5008mvcp1"
 proxies={'http': None, 'https': None}
 
+
+ise_host = toolz.cfg['ise']['hostname']
+userpass = "admin" + ':' + "ISEc0ld"
+encoded_userpass = base64.b64encode(userpass.encode()).decode()
+url_base = ise_host + "/ers/config/endpoint"
 
 # generate_header
 #   Returns full HTTP header with current bearer of cppm_api module
@@ -73,12 +81,14 @@ def generate_header():
 #       }
 #     }
 #
-def endpoint_query(mac):
+
+
+def endpoint_query(mac): # checks if the endpoint specified already exists
     global host
     url = 'https://' + host + '/api/endpoint/mac-address/' + str(mac)
     endpoints = []
     try:
-        result = requests.get(url, headers=generate_header(), proxies=proxies)
+        result = requests.get(url, headers=generate_header(), verify = False)
     except Exception as e:
         raise Exception('API error querying endpoint: ' + str(e))
     if result.status_code == 404:
@@ -93,6 +103,31 @@ def endpoint_query(mac):
     return endpoint
 
 
+def query_endpoint(mac,method="GET", payload={}):
+    global ise_host
+    try:
+        url = 'https://' + ise_host + "/ers/config/endpoint?filter=mac.EQ." + mac
+        headers = {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json',
+        'ERS-Media-Type': 'identity.endpoint.1.2',
+        'Authorization': 'Basic ' + encoded_userpass,
+        }
+        response = requests.request(method, url, headers=headers, verify = False, data=payload)
+        if response.status_code == 404:
+            return None
+        if response.status_code >= 300:
+            raise Exception('API HTTP status returns error while querying endpoint: ' + \
+                response.json()['detail'])
+    except Exception as ex:
+        print(str(ex))
+        raise Exception('API error querying endpoint: ' + str(ex))
+    try:
+        endpoint_response = response.json()
+    except Exception as ex:
+        print(str(ex))
+        raise Exception('API error while reading endpoint attributes: ' + str(ex))
+    return endpoint_response
 
 # endpoint_list
 #   Generates list of endpoints by calling Clearpass API
@@ -129,6 +164,22 @@ def endpoint_list(page_limit=1000):
     return endpoints
 
 
+def request(method="GET", payload={}, extrapath=""):
+    global url_base
+    try:
+        url = url_base + extrapath
+        headers = {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json',
+        'ERS-Media-Type': 'identity.endpoint.1.2',
+        'Authorization': 'Basic ' + encoded_userpass,
+        }
+        response = requests.request(method, url, headers=headers, verify = False, data=payload)
+        return { "status":response.status_code, "text": response.text}
+    except Exception as ex:
+        print(str(ex))
+        raise Exception('API error while reading endpoint attributes: ' + str(ex))
+            
 
 #  result_should_scrolled
 #   Returns 'None' if there is no further page with additional endpoints in response
@@ -178,6 +229,39 @@ def endpoint_create(endpoint_dict, dry_run=False):
     return
 
 
+def create_endpoint(json_data):
+    try:
+        new_object = json.dumps(json_data)
+        new_object = new_object.replace("'","")
+        response = request("POST", new_object)
+        if response.status_code == 404:
+            return None
+        if response.status_code >= 300:
+            raise Exception('API HTTP status returned an error while creating endpoint: ' + \
+                response.json()['detail'])
+
+    except Exception as ex:
+        print(str(ex))
+        raise Exception('API HTTP status returned an error while creating endpoint: ' + str(ex))
+
+def update_endpoint(json_data, id):
+    try:
+        new_object = json.dumps(json_data)
+        new_object = new_object.replace("'","")
+        extra_path = "/" + str(id)
+        response = request("PUT", new_object, extra_path)
+        if response["text"] == "" or response["text"] == None:
+            print(str(response["status"]))
+        else:
+            response_text = str(response["text"])
+        if response.status_code == 404:
+            return None
+        if response.status_code >= 300:
+            raise Exception('API HTTP status returned an error while updating endpoint: ' + response.json()['detail'])
+
+    except Exception as ex:
+        print(str(ex))
+        raise Exception('API HTTP status returned an error while updating endpoint: ' + str(ex))
 
 # endpoint_update
 #   Updates endpoint with given endpoint dictionary by calling Clearpass API

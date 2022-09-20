@@ -58,11 +58,11 @@ clearpass:
       target: 'INSIGHT-ADOPT-ENABLE'
       value: True
 ise:
-    hostname: 127.0.0.1
+    hostname: 212.77.180.253
 transaction:
     path: '/opt/usuvalve/transaction'
 usu:
-    field_is_mac: 'macadresse'
+    field_is_mac: '78:8C:77:32:30:E3'
     field_mapping:
       'komponentennr': 'USU-COMPONENT-CODE'
       'komponententyp': 'USU-SYSTEM-TYPE'
