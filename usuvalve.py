@@ -56,7 +56,6 @@ def load_scopes(type):
     return scopes
 
 
-
 # has_mac_address()
 #  If endpoint missing mandatory mac address data, generate debug output and
 #  returns boolsch 'False', otherwise function returns 'True'.
@@ -148,7 +147,7 @@ prüft, ob der als Parameter übergebene Wert ein bestimmtes Kriterium erfüllt,
 Ist dies der Fall, wird der Wert durch eine bestimmte Variable ersetzt.
 '''
 def validate_value(value):
-    if value == "-" or value == "." or value == "_" or value == "'" or value == ":" or value == "*" or value == "!" or value == "&" or value == "=" or value == '':
+    if value == "-" or value == "." or value == "_" or value == "'" or value == ":" or value == "*" or value == "!" or value == "&" or value == "=":
         new_value = "Unbekannt"
         return new_value
     else:
@@ -240,6 +239,21 @@ def create_ise_dict(endpoint):
 
 
 
+def check_value_changed(response,endpoint):
+    response_data = response["ERSEndPoint"]
+    endpoint_data = endpoint["ERSEndPoint"]
+    if response_data["mac"] == endpoint_data["mac"]:
+        response_custom_attributes = response_data["customAttributes"]["customAttributes"]
+        endpoint_custom_attributes = endpoint_data["customAttributes"]["customAttributes"]
+        for key in response_custom_attributes:
+            print(endpoint_custom_attributes.get(key))
+            if response_custom_attributes[key] == endpoint_custom_attributes.get(key):
+                changevalue = False
+            else:
+                changevalue = True
+    return changevalue
+
+
 
 def sync_to_ise(endpoint):
     usu_cfg_mac_field = toolz.cfg['usu']['field_is_mac']
@@ -264,8 +278,12 @@ def sync_to_ise(endpoint):
     else:
         resources = cppm_endpoint["SearchResult"]["resources"]
         id = resources[0]["id"]
-        #toolz.logger.info('Modifying endpoint '+ endpoint[usu_cfg_mac_field]) Funktioniert nicht
-        cpApi.update_endpoint(cppm_api_dict, id)
+        extra_path = "/" + id
+        response = cpApi.request(extra_path)
+        value_changed = check_value_changed(response["text"],new_ise_dict)
+        if value_changed == True:
+            #toolz.logger.info('Modifying endpoint '+ endpoint[usu_cfg_mac_field])
+            cpApi.update_endpoint(new_ise_dict, id)
 
 # staging_sync()
 #  Verifies for mandatory MAC address field in list of endpoint dicts. If full
@@ -276,7 +294,7 @@ def sync_to_ise(endpoint):
 #        target = String of 'clearpass' or 'ise' what the target API will be
 #  RETURNS: None
 #
-def staging_sync(endpoints, target): # This is where my function should be called
+def staging_sync(endpoints, target): # Commented some part of this function because i currently don't understand how it works and what difference it makes
     # usu_cfg_mac_field = toolz.cfg['usu']['field_is_mac']
     for endpoint in endpoints:
         # if not has_mac_address(endpoint):
