@@ -20,7 +20,6 @@ import sys
 import json
 import time
 import traceback
-from pprint import pprint
 
 
 # Include own code
@@ -30,7 +29,7 @@ import cppm_api
 import usu_api
 import importz
 import tranz
-import cppm_api as cpApi
+import ise_api
 
 
 # Global var assignment
@@ -147,7 +146,7 @@ prüft, ob der als Parameter übergebene Wert ein bestimmtes Kriterium erfüllt,
 Ist dies der Fall, wird der Wert durch eine bestimmte Variable ersetzt.
 '''
 def validate_value(value):
-    if value == "-" or value == "." or value == "_" or value == "'" or value == ":" or value == "*" or value == "!" or value == "&" or value == "=":
+    if value == "-" or value == "." or value == "_" or value == "'" or value == ":" or value == "*" or value == "!" or value == "&" or value == "=" or value == "":
         new_value = "Unbekannt"
         return new_value
     else:
@@ -190,67 +189,45 @@ def sync_to_cppm(endpoint):
     return
 
 
-def create_ise_dict(endpoint):
-    """"
-    nimmt die verfügbaren Endpunkte in der ISE als Parameter 
-    und auch jedes einzelne Objekt innerhalb des json. 
-    Diese Werte werden verglichen und auf der Grundlage des 
-    Ergebnisses wird ein Aktualisierungs- oder Erstellungsvorgang durchgeführt
-    """
 
-    field_values = endpoint["field_mapping"]
-    
-    try:
-        json_data = {
-            "ERSEndPoint": {
-                "mac": endpoint["field_is_mac"],
-                "customAttributes": {
-                    "customAttributes": {
-                        "admingruppe": validate_value(field_values.get("admingruppe","")),
-                        "adresse": validate_value(field_values.get("adresse","")),
-                        "betriebsmodell": validate_value(field_values.get("betriebsmodell","")),
-                        "computername": validate_value(field_values.get("computername","")),
-                        "erstellt": validate_value(field_values.get("erstellt","")),
-                        "feldgruppe": validate_value(field_values.get("feldgruppe","")),
-                        "geaendert": validate_value(field_values.get("geaendert","")),
-                        "komponentenklasse": validate_value(field_values.get("komponentenklasse","")),
-                        "komponentennr": validate_value(field_values.get("komponentennr","")),
-                        "komponententyp": validate_value(field_values.get("komponententyp","")),
-                        "komponentestatus": validate_value(field_values.get("komponentestatus","")),
-                        "kunde": validate_value(field_values.get("kunde","")),
-                        "orgeinheit_beschreibung": validate_value(field_values.get("orgeinheit_beschreibung","")),
-                        "orgeinheit_nr": validate_value(field_values.get("orgeinheit_nr","")),
-                        "raum": validate_value(field_values.get("raum", "")),
-                        "raumadresse": validate_value(field_values.get("raumadresse","")),
-                        "seriennr": validate_value(field_values.get("seriennr","")),
-                        "systemart": validate_value(field_values.get("systemart","")),
-                        "systemklasse": validate_value(field_values.get("systemklasse","")),
-                        "systemname": validate_value(field_values.get("systemname","")),
-                        "systemnr": validate_value(field_values.get("systemnr","")),
-                        "systemstatus": validate_value(field_values.get("systemstatus",""))
+def create_ise_dict(ise_api_dict,mac):
+    template = toolz.cfg["usu"]
+    field_mapping = template["field_mapping"]
+    customAttributes = {}
+
+    for mapping in field_mapping:
+        new_key_values_dict = {mapping: validate_value(ise_api_dict[0].get(mapping,""))}
+        customAttributes.update(new_key_values_dict)
+
+    json_data = {"ERSEndPoint": {
+                    "mac": mac, \
+                    "customAttributes": {}
                     }
                 }
-            }
-        }
-        return json_data
-    except Exception as ex:
-        print("[INFO] Exception Detected: " + str(ex))
-        raise Exception('Error while reading endpoint: ' + str(ex))
+    
+    json_data["ERSEndPoint"]["customAttributes"]["customAttributes"] = customAttributes
+    return json_data
 
 
 
-def check_value_changed(response,endpoint):
+def check_value_changed(response,new_ise_dict):
     response_data = response["ERSEndPoint"]
-    endpoint_data = endpoint["ERSEndPoint"]
-    if response_data["mac"] == endpoint_data["mac"]:
+    new_ise_dict_data = new_ise_dict["ERSEndPoint"]
+    if response_data["mac"] == new_ise_dict_data["mac"]:
         response_custom_attributes = response_data["customAttributes"]["customAttributes"]
-        endpoint_custom_attributes = endpoint_data["customAttributes"]["customAttributes"]
+        new_ise_custom_attributes = new_ise_dict_data["customAttributes"]["customAttributes"]
         for key in response_custom_attributes:
-            print(endpoint_custom_attributes.get(key))
-            if response_custom_attributes[key] == endpoint_custom_attributes.get(key):
+            if response_custom_attributes[key] == new_ise_custom_attributes.get(key):
                 changevalue = False
             else:
                 changevalue = True
+                return changevalue
+        for key in new_ise_custom_attributes:
+            if new_ise_custom_attributes[key] == response_custom_attributes.get(key):
+                changevalue = False
+            else:
+                changevalue = True
+                return changevalue
     return changevalue
 
 
@@ -258,32 +235,32 @@ def check_value_changed(response,endpoint):
 def sync_to_ise(endpoint):
     usu_cfg_mac_field = toolz.cfg['usu']['field_is_mac']
     try:
-        cppm_endpoint = cpApi.query_endpoint(endpoint[usu_cfg_mac_field])
+        ise_endpoint = ise_api.query_endpoint(endpoint[usu_cfg_mac_field])
     except Exception as e:
-        toolz.logger.warning('Error quering clearpass endpoint data'+\
+        toolz.logger.warning('Error quering ise endpoint data'+\
                              ' for \''+endpoint[usu_cfg_mac_field]+'\':' +str(e))
         return
     try:
-        cppm_api_dict = importz.usu_to_cppm_dict(endpoint, toolz.cfg['usu'])
-        #cppm_api_dict = inject_insight_adaopt(cppm_api_dict, cppm_endpoint)
+        ise_api_dict = importz.usu_to_cppm_dict(endpoint, toolz.cfg['usu'])
+        cppm_api_dict = inject_insight_adaopt(cppm_api_dict, ise_endpoint)
         #toolz.logger.debug(str(endpoint))
         #toolz.logger.debug(str(cppm_api_dict))
     except Exception as e:
-        toolz.logger.warning('Error creating dict for ClearPass API: '+str(e))
+        toolz.logger.warning('Error creating dict for ISE API: '+str(e))
 
-    new_ise_dict = create_ise_dict(cppm_api_dict) # Creates a modified ISE dictionary
-    if cppm_endpoint["SearchResult"]["total"] == 0:
+    new_ise_dict = create_ise_dict(ise_api_dict) # Creates a modified ISE dictionary
+    if ise_endpoint["SearchResult"]["total"] == 0:
         #toolz.logger.info('Creating endpoint ' + endpoint[usu_cfg_mac_field]) Funktioniert nicht
-        cpApi.create_endpoint(new_ise_dict)
+        ise_api.create_endpoint(new_ise_dict)
     else:
-        resources = cppm_endpoint["SearchResult"]["resources"]
+        resources = ise_endpoint["SearchResult"]["resources"]
         id = resources[0]["id"]
         extra_path = "/" + id
-        response = cpApi.request(extra_path)
+        response = ise_api.request(extra_path)
         value_changed = check_value_changed(response["text"],new_ise_dict)
         if value_changed == True:
             #toolz.logger.info('Modifying endpoint '+ endpoint[usu_cfg_mac_field])
-            cpApi.update_endpoint(new_ise_dict, id)
+            ise_api.update_endpoint(new_ise_dict, id)
 
 # staging_sync()
 #  Verifies for mandatory MAC address field in list of endpoint dicts. If full
@@ -294,20 +271,20 @@ def sync_to_ise(endpoint):
 #        target = String of 'clearpass' or 'ise' what the target API will be
 #  RETURNS: None
 #
-def staging_sync(endpoints, target): # Commented some part of this function because i currently don't understand how it works and what difference it makes
-    # usu_cfg_mac_field = toolz.cfg['usu']['field_is_mac']
+def staging_sync(endpoints, target):
+    usu_cfg_mac_field = toolz.cfg['usu']['field_is_mac']
     for endpoint in endpoints:
-        # if not has_mac_address(endpoint):
-        #     continue
-        # if not toolz.full_sync and tranz.is_done(endpoint):
-        #     continue
-        # toolz.logger.debug('Processing endpoint \''+\
-        #                    endpoint[usu_cfg_mac_field]+'\'')
+        if not has_mac_address(endpoint):
+            continue
+        if not toolz.full_sync and tranz.is_done(endpoint):
+            continue
+        toolz.logger.debug('Processing endpoint \''+\
+                           endpoint[usu_cfg_mac_field]+'\'')
         try:
             if target == 'clearpass':
                 sync_to_cppm(endpoint)
             if target == 'ise':
-                sync_to_ise(endpoint) # The magic happens here
+                sync_to_ise(endpoint)
                 #toolz.logger.warning('Syncing to ISE not yet implemented')
             if not toolz.full_sync:
                 tranz.append_cache(endpoint)

@@ -58,25 +58,34 @@ clearpass:
       target: 'INSIGHT-ADOPT-ENABLE'
       value: True
 ise:
-    hostname: 212.77.180.253
+    hostname: 212.77.180.253:9060
 transaction:
     path: '/opt/usuvalve/transaction'
 usu:
-    field_is_mac: '78:8C:77:32:30:E3'
+    field_is_mac: 'macadresse'
     field_mapping:
-      'komponentennr': 'USU-COMPONENT-CODE'
-      'komponententyp': 'USU-SYSTEM-TYPE'
-      'systemnr': 'USU-SYSTEM-CODE'
-      'computername': 'USU-COMPUTER-NAME'
-      'systemname': 'USU-SYSTEM-NAME'
-      'kunde': 'USU-CUSTOMER'
-      'komponentenklasse': 'USU-SYSTEM-CLASS'
-      'seriennr': 'USU-SYSTEM-SERIAL'
-      'geaendert': 'USU-LAST-CHANGE'
-      'orgeinheit_nr': 'USU-ORG-CODE'
-      'orgeinheit_beschreibung': 'USU-ORG-DESCRIPTION'
       'admingruppe': 'USU-ADMIN-GROUP'
       'adresse': 'USU-LOCATION-SITE'
+      'betriebsmodell': 'USU-BETRIEBS-MODELL'
+      'computername': 'USU-COMPUTER-NAME'
+      'erstellt': 'USU-FIRST-CREATED'
+      'feldgruppe': 'USU-FIELD-GROUP'
+      'geaendert': 'USU-LAST-CHANGE'
+      'komponentenklasse': 'USU-SYSTEM-CLASS'
+      'komponentennr': 'USU-COMPONENT-CODE'
+      'komponententyp': 'USU-SYSTEM-TYPE'
+      'macadresse': 'USU-SYSTEM-MACADDRESS'
+      'komponentestatus': 'USU-KOMPONENT-STATUS'
+      'kunde': 'USU-CUSTOMER'
+      'orgeinheit_beschreibung': 'USU-ORG-DESCRIPTION'
+      'orgeinheit_nr': 'USU-ORG-CODE'
       'raum': 'USU-LOCATION-ROOM'
+      'raumadresse': 'USU-ROOM-ADDRESS'
+      'seriennr': 'USU-SYSTEM-SERIAL'
+      'systemart': 'USU-SYSTEM-TYPE'
+      'systemklasse': 'USU-SYSTEM-CLASS'
+      'systemname': 'USU-SYSTEM-NAME'
+      'systemnr': 'USU-SYSTEM-CODE'
+      'systemstatus': 'USU-SYSTEM-STATUS'
     cppm_default_values:
       Status: 'Known'
