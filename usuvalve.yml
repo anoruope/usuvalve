@@ -59,6 +59,8 @@ clearpass:
       value: True
 ise:
     hostname: 212.77.180.253:9060
+    username: dummy-to-be-changed
+    password: change-me
 transaction:
     path: '/opt/usuvalve/transaction'
 usu:

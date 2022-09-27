@@ -13,12 +13,12 @@ import toolz
 execution_path = os.getcwd()
 load_dotenv(path.join(execution_path, '.env'))
 
-ise_host = toolz.cfg['ise']['hostname']
+host = os.getenv('ISENODE')
 ise_user = os.getenv('USER')
 ise_pass = os.getenv('PASSWD')
 userpass = ise_user + ':' + ise_pass
 encoded_userpass = base64.b64encode(userpass.encode()).decode()
-url_base = ise_host + "/ers/config/endpoint"
+url_base = host + "/ers/config/endpoint"
 
 
 def query_endpoint(mac,method="GET", payload={}):
@@ -102,4 +102,3 @@ def create_endpoint(json_data):
         raise Exception('API HTTP status returned an error while creating endpoint: ' + str(ex))
 
 
-    

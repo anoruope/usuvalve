@@ -36,6 +36,9 @@ import ise_api
 #
 cppm_api.host =                 toolz.cfg['clearpass']['hostname']
 cppm_api.authz_bearer =         toolz.cfg['clearpass']['authz_bearer']
+ise_api.host =                  toolz.cfg['ise']['hostname']
+ise_api.userpass =              toolz.cfg['ise']['username'] +':'+ toolz.cfg['ise']['password']
+
 tranz.path =                    toolz.cfg['transaction']['path']
 
 
